@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -81,33 +82,36 @@ main .bags .box h1 {
 }
 
 header {
-  width: 1530px;
+  width: 100%;
   height: 206px;
 }
-header .upper-section {
+header .green-field {
+  background-color: #007878;
+}
+header .green-field .upper-section {
   background-color: #007878;
   width: 100%;
   height: 48px;
 }
-header .upper-section .container {
+header .green-field .upper-section .container {
   width: 1128px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 400px;
 }
-header .upper-section .container .phone {
+header .green-field .upper-section .container .phone {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin-left: 0px;
 }
-header .upper-section .container .phone img {
+header .green-field .upper-section .container .phone img {
   width: 24px;
   height: 24px;
 }
-header .upper-section .container ul {
+header .green-field .upper-section .container ul {
   margin-right: 218px;
   display: flex;
   align-items: center;
@@ -174,26 +178,26 @@ header nav ul li {
 }
 
 .hero-section {
-  width: 1530px;
+  width: 100%;
   height: 584;
   background-color: #ffe2e0;
 }
 .hero-section .container {
-  width: 1205px;
+  border: 2px solid black;
+  width: 1128px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 0;
-  margin-left: 202px;
+  gap: 160px;
 }
 .hero-section .container .hero-img {
+  border: 1px solid black;
   width: 642px;
   height: 535px;
-  margin-right: 8px;
 }
 
 .guarantee-section {
-  width: 1530px;
+  width: 100%;
   height: 144px;
   background: #f7f7f7;
 }
