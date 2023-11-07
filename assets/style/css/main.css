@@ -177,11 +177,34 @@ header nav ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 0;
+  margin-left: 202px;
 }
 .hero-section .container .hero-img {
   width: 642px;
   height: 535px;
+  margin-right: 8px;
 }
-.hero-section .container .hero-img img {
-  margin-left: 5px;
+
+.guarantee-section {
+  width: 1530px;
+  height: 144px;
+  background: #f7f7f7;
+}
+.guarantee-section .container {
+  width: 1128px;
+}
+.guarantee-section .container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  gap: 47px;
+}
+.guarantee-section .container ul li {
+  margin-top: 48px;
+}
+.guarantee-section .container ul li img {
+  width: 48px;
+  height: 48px;
 }/*# sourceMappingURL=main.css.map */

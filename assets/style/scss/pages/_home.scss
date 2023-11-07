@@ -8,11 +8,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 0;
+    margin-left: 202px;
     .hero-img {
       width: 642px;
       height: 535px;
-      img {
-        margin-left: 5px;
+      margin-right: 8px;
+    }
+  }
+}
+// guarantee section
+.guarantee-section {
+  width: 1530px;
+  height: 144px;
+  background: #f7f7f7;
+
+  .container {
+    width: 1128px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+      gap: 47px;
+      li {
+        margin-top: 48px;
+        img {
+          width: 48px;
+          height: 48px;
+        }
       }
     }
   }
