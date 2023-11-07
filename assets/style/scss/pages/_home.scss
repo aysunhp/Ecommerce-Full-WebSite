@@ -41,3 +41,23 @@
     }
   }
 }
+
+.swiper {
+  .container {
+    margin-left: 201px;
+    width: 1128px;
+    .featured-productions {
+      width: 1128px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      gap: 673px;
+      margin-bottom: 32px;
+
+      h1 {
+        padding: 13px 0 14px 0;
+      }
+    }
+    
+  }
+}
