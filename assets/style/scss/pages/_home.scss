@@ -1,25 +1,23 @@
 // hero section
 .hero-section {
-  width: 1530px;
+  width: 100%;
   height: 584;
   background-color: #ffe2e0;
   .container {
-    width: 1205px;
+    width: 1128px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 0;
-    margin-left: 202px;
+    gap: 160px;
     .hero-img {
       width: 642px;
       height: 535px;
-      margin-right: 8px;
     }
   }
 }
 // guarantee section
 .guarantee-section {
-  width: 1530px;
+  width: 100%;
   height: 144px;
   background: #f7f7f7;
 
@@ -43,21 +41,20 @@
 }
 
 .swiper {
+  width: 100%;
   .container {
-    margin-left: 201px;
     width: 1128px;
     .featured-productions {
-      width: 1128px;
+      width: 100%;
       height: 54px;
       display: flex;
       align-items: center;
-      gap: 673px;
+      gap: 650px;
       margin-bottom: 32px;
 
       h1 {
         padding: 13px 0 14px 0;
       }
     }
-    
   }
 }

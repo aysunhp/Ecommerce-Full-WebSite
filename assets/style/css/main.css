@@ -121,7 +121,7 @@ header nav ul li a {
 }
 
 header {
-  width: 1530px;
+  width: 100%;
   height: 206px;
 }
 header .upper-section {
@@ -214,26 +214,24 @@ header nav ul li {
 }
 
 .hero-section {
-  width: 1530px;
+  width: 100%;
   height: 584;
   background-color: #ffe2e0;
 }
 .hero-section .container {
-  width: 1205px;
+  width: 1128px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 0;
-  margin-left: 202px;
+  gap: 160px;
 }
 .hero-section .container .hero-img {
   width: 642px;
   height: 535px;
-  margin-right: 8px;
 }
 
 .guarantee-section {
-  width: 1530px;
+  width: 100%;
   height: 144px;
   background: #f7f7f7;
 }
@@ -255,16 +253,18 @@ header nav ul li {
   height: 48px;
 }
 
+.swiper {
+  width: 100%;
+}
 .swiper .container {
-  margin-left: 201px;
   width: 1128px;
 }
 .swiper .container .featured-productions {
-  width: 1128px;
+  width: 100%;
   height: 54px;
   display: flex;
   align-items: center;
-  gap: 673px;
+  gap: 650px;
   margin-bottom: 32px;
 }
 .swiper .container .featured-productions h1 {
