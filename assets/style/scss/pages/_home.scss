@@ -4,10 +4,7 @@
   height: 584;
   background-color: #ffe2e0;
   .container {
-<<<<<<< HEAD
     border: 2px solid black;
-=======
->>>>>>> 2634cd713800b19d5c599f361e8e7a25241304f9
     width: 1128px;
     display: flex;
     justify-content: space-between;
@@ -54,8 +51,7 @@
       height: 54px;
       display: flex;
       align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       gap: 24px;
       margin: 80px 0 96px 202px;
       position: relative;
@@ -85,16 +81,12 @@
         position: absolute;
         top: 45%;
         right: -1%;
-=======
-      gap: 673px;
-=======
-      gap: 650px;
->>>>>>> 2634cd713800b19d5c599f361e8e7a25241304f9
-      margin-bottom: 32px;
-
-      h1 {
-        padding: 13px 0 14px 0;
->>>>>>> 69bf0f6438b2046c415aea80b37ec55271f47dd2
+        gap: 673px;
+        gap: 650px;
+        margin-bottom: 32px;
+        h1 {
+          padding: 13px 0 14px 0;
+        }
       }
     }
   }
