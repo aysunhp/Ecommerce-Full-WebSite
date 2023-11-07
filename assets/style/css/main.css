@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+header .upper-section {
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+}
+header .snobella-section .container .logo {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Palanquin";
+}
+header .snobella-section .container input {
+  color: gray;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
+}
+header .snobella-section .container ul a {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500px;
+  color: black;
+}
+header .snobella-section .container ul i {
+  width: 24px;
+  height: 24px;
+}
+header nav ul li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+header nav ul li a {
+  color: #273142;
+}
+
+.hero-section h1 {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.hero-section h2 {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+}
+.hero-section p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero-section button {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-section button {
+  padding: 12px 56px 13px 57px;
+  margin-top: 60px;
+}
+
+header {
+  width: 1530px;
+  height: 206px;
+}
+header .upper-section {
+  background-color: #007878;
+  width: 100%;
+  height: 48px;
+}
+header .upper-section .container {
+  width: 1128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 400px;
+}
+header .upper-section .container .phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-left: 0px;
+}
+header .upper-section .container .phone img {
+  width: 24px;
+  height: 24px;
+}
+header .upper-section .container ul {
+  margin-right: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+header .snobella-section .container {
+  width: 1128px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+header .snobella-section .container .logo {
+  width: 156px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 7px;
+}
+header .snobella-section .container .input {
+  width: 504px;
+  height: 48px;
+  border: none;
+  position: relative;
+}
+header .snobella-section .container .input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #f7f9fc;
+  border-radius: 8px;
+}
+header .snobella-section .container .input .fa-magnifying-glass {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 24px;
+  color: rgba(39, 49, 66, 0.7490196078);
+}
+header .snobella-section .container ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+}
+header nav {
+  width: 1128px;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+header nav ul li {
+  margin: 15px 45px 0px 0;
+  padding: 6px;
+}
+
+.hero-section {
+  width: 1530px;
+  height: 584;
+  background-color: #ffe2e0;
+}
+.hero-section .container {
+  width: 1205px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-section .container .hero-img {
+  width: 642px;
+  height: 535px;
+}
+.hero-section .container .hero-img img {
+  margin-left: 5px;
+}/*# sourceMappingURL=main.css.map */

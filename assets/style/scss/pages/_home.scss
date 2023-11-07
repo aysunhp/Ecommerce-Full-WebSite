@@ -1,0 +1,19 @@
+// hero section
+.hero-section {
+  width: 1530px;
+  height: 584;
+  background-color: #ffe2e0;
+  .container {
+    width: 1205px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .hero-img {
+      width: 642px;
+      height: 535px;
+      img {
+        margin-left: 5px;
+      }
+    }
+  }
+}

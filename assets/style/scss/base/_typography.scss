@@ -1,0 +1,75 @@
+// header
+header {
+  .upper-section {
+    color: white;
+
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .snobella-section {
+    .container {
+      .logo {
+        font-weight: 700;
+        font-size: 40px;
+        font-family: "Palanquin";
+      }
+      input {
+        color: gray;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px;
+      }
+      ul {
+        a {
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 500px;
+          color: black;
+        }
+        i {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  nav {
+    ul {
+      li {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Poppins";
+        a {
+          color: #273142;
+        }
+      }
+    }
+  }
+}
+
+// hero section
+.hero-section {
+  h1 {
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+  }
+  p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+  }
+  button {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
