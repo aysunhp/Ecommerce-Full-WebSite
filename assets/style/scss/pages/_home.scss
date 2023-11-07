@@ -39,7 +39,7 @@
     }
   }
 }
-
+// swipper section
 .swiper {
   width: 100%;
   .container {
@@ -54,6 +54,53 @@
 
       h1 {
         padding: 13px 0 14px 0;
+      }
+    }
+  }
+}
+
+.product-list-section {
+  width: 100%;
+
+  .containerr {
+    width: 1128px;
+    padding-left: 5px;
+    .product-list-navigation {
+      margin-top: 24px;
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 210px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  .product-list {
+    .containerr {
+      width: 1128px;
+      padding-left: 8px;
+      margin-top: 48px;
+      gap: 58px;
+      .categories-section {
+        .categories {
+          border: 1px solid black;
+          border-radius: 5px;
+          .categories-title {
+            padding: 28px;
+          }
+          .categories-content {
+            ul {
+              li {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+      .products-section {
       }
     }
   }
