@@ -73,6 +73,48 @@ header nav ul li a {
   font-weight: 500;
 }
 
+.swiper .container .featured-productions h1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 54.4px */
+}
+.swiper .container .featured-productions a {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .container .featured-products .featured-card .card-body p {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .container .featured-products .featured-card .card-body .product-price .text1 {
+  color: #f75145;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 34px */
+}
+.swiper .container .featured-products .featured-card .card-body .product-price .text2 {
+  color: rgba(54, 54, 54, 0.75);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+
 .hero-section button {
   padding: 12px 56px 13px 57px;
   margin-top: 60px;
@@ -211,4 +253,20 @@ header nav ul li {
 .guarantee-section .container ul li img {
   width: 48px;
   height: 48px;
-} /*# sourceMappingURL=main.css.map */
+}
+
+.swiper .container {
+  margin-left: 201px;
+  width: 1128px;
+}
+.swiper .container .featured-productions {
+  width: 1128px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 673px;
+  margin-bottom: 32px;
+}
+.swiper .container .featured-productions h1 {
+  padding: 13px 0 14px 0;
+}/*# sourceMappingURL=main.css.map */
