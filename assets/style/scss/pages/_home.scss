@@ -42,18 +42,16 @@
   }
 }
 
-// main section
-main {
-  width: 1530px;
-  height: 4136px;
-  margin: 0 auto;
-  //  bag card section
-  .bags {
-    .container {
-      width: 1130px;
+.swiper {
+  .container {
+    margin-left: 201px;
+    width: 1128px;
+    .featured-productions {
+      width: 1128px;
+      height: 54px;
       display: flex;
-      justify-content: center;
       align-items: center;
+<<<<<<< HEAD
       gap: 24px;
       margin: 80px 0 96px 202px;
       position: relative;
@@ -83,7 +81,15 @@ main {
         position: absolute;
         top: 45%;
         right: -1%;
+=======
+      gap: 673px;
+      margin-bottom: 32px;
+
+      h1 {
+        padding: 13px 0 14px 0;
+>>>>>>> 69bf0f6438b2046c415aea80b37ec55271f47dd2
       }
     }
+    
   }
 }
