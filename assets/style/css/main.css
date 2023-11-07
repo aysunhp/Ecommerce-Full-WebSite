@@ -223,7 +223,10 @@ header nav ul li {
   background-color: #ffe2e0;
 }
 .hero-section .container {
+<<<<<<< HEAD
   border: 2px solid black;
+=======
+>>>>>>> 2634cd713800b19d5c599f361e8e7a25241304f9
   width: 1128px;
   display: flex;
   justify-content: space-between;
@@ -259,16 +262,18 @@ header nav ul li {
   height: 48px;
 }
 
+.swiper {
+  width: 100%;
+}
 .swiper .container {
-  margin-left: 201px;
   width: 1128px;
 }
 .swiper .container .featured-productions {
-  width: 1128px;
+  width: 100%;
   height: 54px;
   display: flex;
   align-items: center;
-  gap: 673px;
+  gap: 650px;
   margin-bottom: 32px;
 }
 .swiper .container .featured-productions h1 {
