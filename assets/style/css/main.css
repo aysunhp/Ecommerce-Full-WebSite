@@ -17,6 +17,11 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 header .upper-section {
   color: white;
   font-family: "Poppins";
@@ -168,11 +173,19 @@ header nav ul li a {
 
 .services .containerr .top-services h1 {
   color: #000;
-  font-family: "Palanquin", sans-serif;
+  font-family: "Palanquin";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 40px */
+}
+.services .containerr .main-service .left-part a {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
 }
 .services .containerr .main-service .right-part li a {
   color: rgba(33, 33, 33, 0.75);
@@ -189,6 +202,111 @@ header nav ul li a {
   font-style: normal;
   font-weight: 500;
   line-height: 170%; /* 30.6px */
+}
+
+.shoppingSection p {
+  color: #1d1d1d;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection p span {
+  color: rgba(29, 29, 29, 0.75);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 68px */
+}
+.shoppingSection .shoppingList .shoppingItem .info h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+}
+.shoppingSection .shoppingList .shoppingItem .info p {
+  color: rgba(33, 33, 33, 0.9);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection .shoppingList .shoppingItem .info select option {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection .shoppingList .shoppingItem .shoppingItem-right .price p {
+  color: #212121;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .info .subtotal p,
+.shoppingSection .shoppingList .checkout-section .info-section .info .shippingChanges p {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .info .totalprice p {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .promecode button {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.2px; /* 170% */
+  border-radius: 0px 8px 8px 0px;
+  background: #ff695e;
+}
+.shoppingSection .shoppingList .checkout-section .buttons .confirmBtn {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  border-radius: 8px;
+  background: #df4244;
+}
+.shoppingSection .shoppingList .checkout-section .buttons .cashPaymentBtn {
+  color: #212121;
+  background-color: white;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  border-radius: 8px;
+  border: 1px solid #212121;
 }
 
 .hero-section button {
@@ -281,13 +399,95 @@ header nav ul {
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  margin-left: 0px;
+  margin-left: 220px;
   padding-left: 0px;
   margin-bottom: 0;
 }
 header nav ul li {
   margin: 15px 45px 0px 0;
   padding: 6px 6px 6px 0px;
+}
+
+.services {
+  width: 100%;
+  background-color: #f7f7f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.services .containerr {
+  width: 1128px;
+}
+.services .containerr .top-service {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .containerr .top-service .search {
+  display: flex;
+  align-items: center;
+}
+.services .containerr .top-service .search input {
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-left: 1px solid rgba(158, 158, 158, 0.35);
+  border-top: 1px solid rgba(158, 158, 158, 0.35);
+  border-bottom: 1px solid rgba(158, 158, 158, 0.35);
+  border-right: none;
+  background: #fff;
+}
+.services .containerr .top-service .search i {
+  padding: 12px 12px 11px 12px;
+  font-size: 25px;
+  border-right: 1px solid rgba(158, 158, 158, 0.35);
+  border-top: 1px solid rgba(158, 158, 158, 0.35);
+  border-bottom: 1px solid rgba(158, 158, 158, 0.35);
+  background-color: #fff;
+}
+.services .containerr .main-service {
+  display: flex;
+}
+.services .containerr .main-service .left-part {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .containerr .main-service .left-part .sendBtn {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #171717;
+  opacity: 0.8;
+  width: 179px;
+  height: 48px;
+}
+.services .containerr .main-service .left-part .sendBtn p {
+  margin: 10px auto;
+}
+.services .containerr .main-service .right-part {
+  padding-left: 140px;
+  display: flex;
+  gap: 70px;
+}
+.services .containerr .main-service .right-part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copyrights .containerr {
+  padding: 15px 0;
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyrights .containerr p {
+  margin-top: 7px;
 }
 
 .product-list-section {
@@ -615,11 +815,19 @@ header nav ul li a {
 
 .services .containerr .top-services h1 {
   color: #000;
-  font-family: "Palanquin", sans-serif;
+  font-family: "Palanquin";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 40px */
+}
+.services .containerr .main-service .left-part a {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
 }
 .services .containerr .main-service .right-part li a {
   color: rgba(33, 33, 33, 0.75);
@@ -638,13 +846,118 @@ header nav ul li a {
   line-height: 170%; /* 30.6px */
 }
 
+.shoppingSection p {
+  color: #1d1d1d;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection p span {
+  color: rgba(29, 29, 29, 0.75);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 68px */
+}
+.shoppingSection .shoppingList .shoppingItem .info h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+}
+.shoppingSection .shoppingList .shoppingItem .info p {
+  color: rgba(33, 33, 33, 0.9);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection .shoppingList .shoppingItem .info select option {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection .shoppingList .shoppingItem .shoppingItem-right .price p {
+  color: #212121;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .info .subtotal p,
+.shoppingSection .shoppingList .checkout-section .info-section .info .shippingChanges p {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .info .totalprice p {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .promecode button {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.2px; /* 170% */
+  border-radius: 0px 8px 8px 0px;
+  background: #ff695e;
+}
+.shoppingSection .shoppingList .checkout-section .buttons .confirmBtn {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  border-radius: 8px;
+  background: #df4244;
+}
+.shoppingSection .shoppingList .checkout-section .buttons .cashPaymentBtn {
+  color: #212121;
+  background-color: white;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  border-radius: 8px;
+  border: 1px solid #212121;
+}
+
 .hero-section button {
   padding: 12px 56px 13px 57px;
   margin-top: 60px;
 }
 
 .hero-section {
-  width: 100%;
+  width: 1530px;
   height: 584;
   background-color: #ffe2e0;
 }
@@ -653,15 +966,17 @@ header nav ul li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 160px;
+  margin-left: 0;
+  margin-left: 202px;
 }
 .hero-section .containerr .hero-img {
   width: 642px;
   height: 535px;
+  margin-right: 8px;
 }
 
 .guarantee-section {
-  width: 100%;
+  width: 1530px;
   height: 144px;
   background: #f7f7f7;
   margin-bottom: 80px;
@@ -730,11 +1045,11 @@ header nav ul li a {
   width: 1128px;
 }
 .swiper .containerr .featured-productions {
-  width: 100%;
+  width: 1128px;
   height: 54px;
   display: flex;
   align-items: center;
-  gap: 650px;
+  gap: 673px;
   margin-bottom: 32px;
 }
 .swiper .containerr .featured-productions h1 {
@@ -777,6 +1092,164 @@ header nav ul li a {
 }
 .swiper .containerr .discount-productions h1 {
   padding: 13px 0 14px 0;
+}
+
+.shoppingSection {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 114px;
+}
+.shoppingSection .containerr {
+  width: 1128px;
+}
+.shoppingSection .containerr .shoppingList {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 744px;
+  height: 211px;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  height: 179px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .image-wrapper img {
+  margin: 23px 14px 19px 13px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .info select {
+  width: 60px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .info p {
+  margin: 0;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .shoppingItem-right {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .shoppingItem-right .price {
+  text-align: end;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .shoppingItem-right .buttons button {
+  border: none;
+  background-color: white;
+}
+.shoppingSection .containerr .shoppingList .checkout-section {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section {
+  width: 360px;
+  height: 275px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .subtotal,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .shippingChanges,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .totalprice {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .subtotal p,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .shippingChanges p,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .totalprice p {
+  margin: 0 10px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode input {
+  width: 200px;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #dbdbdb;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode button {
+  width: 102px;
+  padding-right: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .buttons button {
+  height: 52px;
+}
+
+section {
+  padding-bottom: 72px;
+}
+section .cart-guarantee-section .containerr {
+  width: 1128px;
+}
+section .cart-guarantee-section .containerr ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 1px solid #e4e4e4;
+  width: 100%;
+}
+section .cart-guarantee-section .containerr ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 25%;
+  padding: 0 45px;
+  border-right: 1px solid #e4e4e4;
+}
+section .cart-guarantee-section .containerr ul li img {
+  width: 48px;
+  height: 48px;
+  margin-top: 32px;
+}
+section .cart-guarantee-section .containerr ul li p {
+  text-align: center;
 }
 
 .services {
@@ -836,6 +1309,9 @@ header nav ul li a {
 }
 .services .containerr .main-service .left-part p {
   margin-left: 0;
+}
+.services .containerr .main-service .left-part p img {
+  margin: 0px;
 }
 .services .containerr .main-service .left-part .sendBtn {
   display: flex;
