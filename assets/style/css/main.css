@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.container {
+.containerr {
+  width: 1128px;
   margin: 0 auto;
 }
 
@@ -19,31 +22,36 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 header .upper-section {
   color: white;
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 500;
 }
-header .snobella-section .container .logo {
+header .snobella-section .containerr .logo {
   font-weight: 700;
   font-size: 40px;
   font-family: "Palanquin";
 }
-header .snobella-section .container input {
+header .snobella-section .containerr input {
   color: gray;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
   padding: 15px;
 }
-header .snobella-section .container ul a {
+header .snobella-section .containerr ul a {
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 500px;
   color: black;
 }
-header .snobella-section .container ul i {
+header .snobella-section .containerr ul i {
   width: 24px;
   height: 24px;
 }
@@ -78,7 +86,7 @@ header nav ul li a {
   font-weight: 500;
 }
 
-.swiper .container .featured-productions h1 {
+.swiper .containerr .featured-productions h1 {
   color: #000;
   font-family: "Poppins";
   font-size: 32px;
@@ -86,7 +94,7 @@ header nav ul li a {
   font-weight: 500;
   line-height: 170%; /* 54.4px */
 }
-.swiper .container .featured-productions a {
+.swiper .containerr .featured-productions a {
   color: #000;
   text-align: center;
   font-family: "Poppins";
@@ -95,7 +103,7 @@ header nav ul li a {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-.swiper .container .bestsellers h1 {
+.swiper .containerr .bestsellers h1 {
   color: #000;
   font-family: "Poppins";
   font-size: 32px;
@@ -103,7 +111,7 @@ header nav ul li a {
   font-weight: 500;
   line-height: 170%; /* 54.4px */
 }
-.swiper .container .bestsellers a {
+.swiper .containerr .bestsellers a {
   color: #000;
   text-align: center;
   font-family: "Poppins";
@@ -112,7 +120,7 @@ header nav ul li a {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-.swiper .container .discount-productions h1 {
+.swiper .containerr .discount-productions h1 {
   color: #000;
   font-family: "Poppins";
   font-size: 32px;
@@ -120,7 +128,7 @@ header nav ul li a {
   font-weight: 500;
   line-height: 170%; /* 54.4px */
 }
-.swiper .container .discount-productions a {
+.swiper .containerr .discount-productions a {
   color: #000;
   text-align: center;
   font-family: "Poppins";
@@ -129,7 +137,7 @@ header nav ul li a {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-.swiper .container .featured-products .featured-card .card-body p {
+.swiper .containerr .featured-products .featured-card .card-body p {
   color: #000;
   font-family: "Poppins";
   font-size: 16px;
@@ -137,7 +145,7 @@ header nav ul li a {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-.swiper .container .featured-products .featured-card .card-body .product-price .text1 {
+.swiper .containerr .featured-products .featured-card .card-body .product-price .text1 {
   color: #f75145;
   font-family: "Poppins";
   font-size: 20px;
@@ -145,7 +153,7 @@ header nav ul li a {
   font-weight: 600;
   line-height: 170%; /* 34px */
 }
-.swiper .container .featured-products .featured-card .card-body .product-price .text2 {
+.swiper .containerr .featured-products .featured-card .card-body .product-price .text2 {
   color: rgba(54, 54, 54, 0.75);
   font-family: "Poppins";
   font-size: 16px;
@@ -154,15 +162,23 @@ header nav ul li a {
   line-height: 170%; /* 27.2px */
 }
 
-.services .container .top-services h1 {
+.services .containerr .top-services h1 {
   color: #000;
-  font-family: "Palanquin", sans-serif;
+  font-family: "Palanquin";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 40px */
 }
-.services .container .main-service .right-part li a {
+.services .containerr .main-service .left-part a {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.services .containerr .main-service .right-part li a {
   color: rgba(33, 33, 33, 0.75);
   font-family: "Poppins ,sans-herif";
   font-size: 16px;
@@ -170,13 +186,118 @@ header nav ul li a {
   font-weight: 400;
   line-height: 120%; /* 19.2px */
 }
-.services .container .main-service .right-part li a b {
+.services .containerr .main-service .right-part li a b {
   color: #212121;
   font-family: "Poppins";
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 170%; /* 30.6px */
+}
+
+.shoppingSection p {
+  color: #1d1d1d;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection p span {
+  color: rgba(29, 29, 29, 0.75);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 68px */
+}
+.shoppingSection .shoppingList .shoppingItem .info h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+}
+.shoppingSection .shoppingList .shoppingItem .info p {
+  color: rgba(33, 33, 33, 0.9);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection .shoppingList .shoppingItem .info select option {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+}
+.shoppingSection .shoppingList .shoppingItem .shoppingItem-right .price p {
+  color: #212121;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .info .subtotal p,
+.shoppingSection .shoppingList .checkout-section .info-section .info .shippingChanges p {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .info .totalprice p {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+.shoppingSection .shoppingList .checkout-section .info-section .promecode button {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.2px; /* 170% */
+  border-radius: 0px 8px 8px 0px;
+  background: #ff695e;
+}
+.shoppingSection .shoppingList .checkout-section .buttons .confirmBtn {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  border-radius: 8px;
+  background: #df4244;
+}
+.shoppingSection .shoppingList .checkout-section .buttons .cashPaymentBtn {
+  color: #212121;
+  background-color: white;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  border-radius: 8px;
+  border: 1px solid #212121;
 }
 
 .hero-section button {
@@ -193,25 +314,25 @@ header .upper-section {
   width: 100%;
   height: 48px;
 }
-header .upper-section .container {
+header .upper-section .containerr {
   width: 1128px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 400px;
 }
-header .upper-section .container .phone {
+header .upper-section .containerr .phone {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin-left: 0px;
 }
-header .upper-section .container .phone img {
+header .upper-section .containerr .phone img {
   width: 24px;
   height: 24px;
 }
-header .upper-section .container ul {
+header .upper-section .containerr ul {
   margin-right: 218px;
   display: flex;
   align-items: center;
@@ -220,40 +341,40 @@ header .upper-section .container ul {
   margin-top: 10px;
   margin-right: 0px;
 }
-header .snobella-section .container {
+header .snobella-section .containerr {
   width: 1128px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
 }
-header .snobella-section .container .logo {
+header .snobella-section .containerr .logo {
   width: 156px;
   height: 40px;
   margin-bottom: 20px;
   margin-left: 7px;
 }
-header .snobella-section .container .input {
+header .snobella-section .containerr .input {
   width: 504px;
   height: 48px;
   border: none;
   position: relative;
 }
-header .snobella-section .container .input input {
+header .snobella-section .containerr .input input {
   width: 100%;
   height: 100%;
   border: none;
   background: #f7f9fc;
   border-radius: 8px;
 }
-header .snobella-section .container .input .fa-magnifying-glass {
+header .snobella-section .containerr .input .fa-magnifying-glass {
   position: absolute;
   top: 12px;
   right: 12px;
   font-size: 24px;
   color: rgba(39, 49, 66, 0.7490196078);
 }
-header .snobella-section .container ul {
+header .snobella-section .containerr ul {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -268,7 +389,7 @@ header nav ul {
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  margin-left: 0px;
+  margin-left: 220px;
   padding-left: 0px;
   margin-bottom: 0;
 }
@@ -276,179 +397,232 @@ header nav ul li {
   margin: 15px 45px 0px 0;
   padding: 6px;
 }
+header nav ul li a {
+  white-space: nowrap;
+}
+
+.services {
+  background: #f7f7f9;
+}
+.services .containerr .top-service {
+  display: flex;
+  align-items: center;
+  height: 115px;
+  justify-content: space-between;
+}
 
 .hero-section {
-  width: 100%;
+  width: 1530px;
   height: 584;
   background-color: #ffe2e0;
 }
-.hero-section .container {
-  width: 1128px;
+.hero-section .containerr {
+  width: 1205px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 160px;
+  margin-left: 0;
+  margin-left: 202px;
 }
-.hero-section .container .hero-img {
+.hero-section .containerr .hero-img {
   width: 642px;
   height: 535px;
+  margin-right: 8px;
 }
 
 .guarantee-section {
-  width: 100%;
+  width: 1530px;
   height: 144px;
   background: #f7f7f7;
 }
-.guarantee-section .container {
+.guarantee-section .containerr {
   width: 1128px;
 }
-.guarantee-section .container ul {
+.guarantee-section .containerr ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 0;
   gap: 47px;
 }
-.guarantee-section .container ul li {
+.guarantee-section .containerr ul li {
   margin-top: 48px;
 }
-.guarantee-section .container ul li img {
+.guarantee-section .containerr ul li img {
   width: 48px;
   height: 48px;
 }
 
-.swiper {
-  width: 100%;
-}
-.swiper .container {
+.swiper .containerr {
+  margin-left: 201px;
   width: 1128px;
 }
-.swiper .container .featured-productions {
-  width: 100%;
+.swiper .containerr .featured-productions {
+  width: 1128px;
   height: 54px;
   display: flex;
   align-items: center;
-  gap: 650px;
+  gap: 673px;
   margin-bottom: 32px;
 }
-.swiper .container .featured-productions h1 {
+.swiper .containerr .featured-productions h1 {
   padding: 13px 0 14px 0;
 }
 
-.swiper {
-  width: 100%;
+.shoppingSection {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 114px;
 }
-.swiper .container {
+.shoppingSection .containerr {
   width: 1128px;
 }
-.swiper .container .bestsellers {
+.shoppingSection .containerr .shoppingList {
   width: 100%;
-  height: 54px;
   display: flex;
-  align-items: center;
-  gap: 650px;
-  margin-bottom: 32px;
+  gap: 50px;
 }
-.swiper .container .bestsellers h1 {
-  padding: 13px 0 14px 0;
-}
-
-.swiper {
-  width: 100%;
-}
-.swiper .container {
-  width: 1128px;
-}
-.swiper .container .discount-productions {
-  width: 100%;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  gap: 650px;
-  margin-bottom: 32px;
-}
-.swiper .container .discount-productions h1 {
-  padding: 13px 0 14px 0;
-}
-
-.services {
-  width: 100%;
-  background-color: #f7f7f9;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.services .container {
-  width: 1128px;
-}
-.services .container .top-service {
-  padding-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.services .container .top-service .search {
-  display: flex;
-  align-items: center;
-}
-.services .container .top-service .search input {
-  width: 400px;
-  height: 50px;
-  padding-left: 10px;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
-  border-left: 1px solid rgba(158, 158, 158, 0.35);
-  border-top: 1px solid rgba(158, 158, 158, 0.35);
-  border-bottom: 1px solid rgba(158, 158, 158, 0.35);
-  border-right: none;
-  background: #fff;
-}
-.services .container .top-service .search i {
-  padding: 12px 12px 11px 12px;
-  font-size: 25px;
-  border-right: 1px solid rgba(158, 158, 158, 0.35);
-  border-top: 1px solid rgba(158, 158, 158, 0.35);
-  border-bottom: 1px solid rgba(158, 158, 158, 0.35);
-  background-color: #fff;
-}
-.services .container .main-service {
-  display: flex;
-}
-.services .container .main-service .left-part {
-  width: 40%;
+.shoppingSection .containerr .shoppingList .shoppingItems {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
-.services .container .main-service .left-part .sendBtn {
-  display: flex;
-  border-radius: 8px;
-  border: 1px solid #171717;
-  opacity: 0.8;
-  width: 179px;
-  height: 48px;
-}
-.services .container .main-service .left-part .sendBtn p {
-  margin: 10px auto;
-}
-.services .container .main-service .right-part {
-  padding-left: 140px;
-  display: flex;
-  gap: 70px;
-}
-.services .container .main-service .right-part ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.copyrights .container {
-  padding: 15px 0;
-  width: 1128px;
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  width: 744px;
+  height: 211px;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  height: 179px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .image-wrapper img {
+  margin: 23px 14px 19px 13px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .info select {
+  width: 60px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .info p {
+  margin: 0;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .shoppingItem-right {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .shoppingItem-right .price {
+  text-align: end;
+}
+.shoppingSection .containerr .shoppingList .shoppingItems .shoppingItem .shoppingItem-right .buttons button {
+  border: none;
+  background-color: white;
+}
+.shoppingSection .containerr .shoppingList .checkout-section {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section {
+  width: 360px;
+  height: 275px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .subtotal,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .shippingChanges,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .totalprice {
+  display: flex;
+  justify-content: center;
   justify-content: space-between;
 }
-.copyrights .container p {
-  margin-top: 7px;
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .subtotal p,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .shippingChanges p,
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .info .totalprice p {
+  margin: 0 10px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode input {
+  width: 200px;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #dbdbdb;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode button {
+  width: 102px;
+  padding-right: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.shoppingSection .containerr .shoppingList .checkout-section .buttons button {
+  height: 52px;
+}
+
+section {
+  padding-bottom: 72px;
+}
+section .cart-guarantee-section .containerr {
+  width: 1128px;
+}
+section .cart-guarantee-section .containerr ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 1px solid #e4e4e4;
+  width: 100%;
+}
+section .cart-guarantee-section .containerr ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 25%;
+  padding: 0 45px;
+  border-right: 1px solid #e4e4e4;
+}
+section .cart-guarantee-section .containerr ul li img {
+  width: 48px;
+  height: 48px;
+  margin-top: 32px;
+}
+section .cart-guarantee-section .containerr ul li p {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

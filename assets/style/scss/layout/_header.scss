@@ -5,7 +5,7 @@ header {
     background-color: #007878;
     width: 100%;
     height: 48px;
-    .container {
+    .containerr {
       width: 1128px;
       display: flex;
       align-items: center;
@@ -34,7 +34,7 @@ header {
     }
   }
   .snobella-section {
-    .container {
+    .containerr {
       width: 1128px;
       display: flex;
       justify-content: space-around;
@@ -79,18 +79,34 @@ header {
 
   nav {
     width: 1128px;
+
     ul {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       text-align: left;
-      margin-left: 0px;
+      margin-left: 220px;
       padding-left: 0px;
       margin-bottom: 0;
       li {
         margin: 15px 45px 0px 0;
         padding: 6px;
+        a {
+          white-space: nowrap;
+        }
       }
+    }
+  }
+}
+
+.services {
+  background: #f7f7f9;
+  .containerr {
+    .top-service {
+      display: flex;
+      align-items: center;
+      height: 115px;
+      justify-content: space-between;
     }
   }
 }

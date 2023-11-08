@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.container {
+.containerr {
+  width: 1128px;
   margin: 0 auto;
 }
 li {
@@ -16,4 +19,9 @@ li {
 a {
   text-decoration: none;
   color: #000;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

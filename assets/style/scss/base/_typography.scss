@@ -8,7 +8,7 @@ header {
     font-weight: 500;
   }
   .snobella-section {
-    .container {
+    .containerr {
       .logo {
         font-weight: 700;
         font-size: 40px;
@@ -80,7 +80,7 @@ header {
 
 //swiper section
 .swiper {
-  .container {
+  .containerr {
     .featured-productions {
       h1 {
         color: #000;
@@ -181,11 +181,11 @@ header {
 }
 
 .services {
-  .container {
+  .containerr {
     .top-services {
       h1 {
         color: #000;
-        font-family: "Palanquin", sans-serif;
+        font-family: "Palanquin";
         font-size: 40px;
         font-style: normal;
         font-weight: 700;
@@ -193,6 +193,16 @@ header {
       }
     }
     .main-service {
+      .left-part {
+        a {
+          color: rgba(33, 33, 33, 0.75);
+          font-family: "Poppins";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 170%; /* 27.2px */
+        }
+      }
       .right-part {
         li {
           a {
@@ -212,6 +222,141 @@ header {
               line-height: 170%; /* 30.6px */
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// shoppingcart sec
+.shoppingSection {
+  p {
+    color: #1d1d1d;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 23.8px */
+    span {
+      color: rgba(29, 29, 29, 0.75);
+      font-family: "Poppins";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%; /* 23.8px */
+    }
+  }
+  h1 {
+    color: #212121;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 68px */
+  }
+
+  .shoppingList {
+    .shoppingItem {
+      .info {
+        h1 {
+          color: #212121;
+          font-family: "Poppins";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 170%; /* 27.2px */
+        }
+        p {
+          color: rgba(33, 33, 33, 0.9);
+          font-family: "Poppins";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 170%; /* 23.8px */
+        }
+        select {
+          option {
+            color: rgba(33, 33, 33, 0.75);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%; /* 23.8px */
+          }
+        }
+      }
+      .shoppingItem-right {
+        .price {
+          p {
+            color: #212121;
+            font-family: "Rubik";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 170%; /* 30.6px */
+          }
+        }
+      }
+    }
+    .checkout-section {
+      .info-section {
+        .info {
+          .subtotal,
+          .shippingChanges {
+            p {
+              color: #212121;
+              font-family: "Poppins";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 170%; /* 27.2px */
+            }
+          }
+          .totalprice {
+            p {
+              color: #212121;
+              font-family: "Poppins";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 170%; /* 30.6px */
+            }
+          }
+        }
+        .promecode {
+          button {
+            color: #fff;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 27.2px; /* 170% */
+            border-radius: 0px 8px 8px 0px;
+            background: #ff695e;
+          }
+        }
+      }
+      .buttons {
+        .confirmBtn {
+          color: #fff;
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 170%; /* 27.2px */
+          border-radius: 8px;
+          background: #df4244;
+        }
+        .cashPaymentBtn {
+          color: #212121;
+          background-color: white;
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 170%; /* 27.2px */
+          border-radius: 8px;
+          border: 1px solid #212121;
         }
       }
     }
