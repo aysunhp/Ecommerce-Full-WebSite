@@ -73,15 +73,63 @@ header {
     font-weight: 500;
   }
 }
-
-// guarantee section
-// .guarantee-section {
-// }
+//  bag card section
+.bags {
+  .box {
+    h1 {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
 
 //swiper section
 .swiper {
-  .container {
+  .containerr {
     .featured-productions {
+      h1 {
+        color: #000;
+        font-family: "Poppins";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 170%; /* 54.4px */
+      }
+
+      a {
+        color: #000;
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%; /* 27.2px */
+      }
+    }
+
+    .bestsellers {
+      h1 {
+        color: #000;
+        font-family: "Poppins";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 170%; /* 54.4px */
+      }
+
+      a {
+        color: #000;
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%; /* 27.2px */
+      }
+    }
+
+    .discount-productions {
       h1 {
         color: #000;
         font-family: "Poppins";
@@ -137,7 +185,6 @@ header {
     }
   }
 }
-
 // product list page
 .product-list-section {
   .containerr {
@@ -147,6 +194,43 @@ header {
       font-weight: 500;
       margin-top: 6px;
       margin-bottom: 48px;
+    }
+  }
+}
+.services {
+  .containerr {
+    .top-services {
+      h1 {
+        color: #000;
+        font-family: "Palanquin", sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 40px */
+      }
+    }
+    .main-service {
+      .right-part {
+        li {
+          a {
+            color: rgba(33, 33, 33, 0.75);
+            font-family: "Poppins ,sans-herif";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 19.2px */
+
+            b {
+              color: #212121;
+              font-family: "Poppins";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 170%; /* 30.6px */
+            }
+          }
+        }
+      }
     }
   }
 }

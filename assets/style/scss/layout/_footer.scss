@@ -1,0 +1,105 @@
+.services {
+  width: 100%;
+  background-color: #f7f7f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .line {
+    width: 100%;
+    border: 1px solid rgba(39, 49, 66, 0.15);
+    margin-bottom: 56px;
+  }
+  .top-service {
+    .containerr {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      h1 {
+        margin-left: 0px;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-right: 0px;
+        margin-left: 468px;
+        width: 504px;
+        height: 48px;
+        input {
+          width: 504px;
+          height: 48px;
+          padding-left: 10px;
+          border-radius: 8px;
+          border: 1px solid rgba(158, 158, 158, 0.35);
+          background: #fff;
+        }
+        i {
+          position: absolute;
+          top: calc(50% - 12px);
+          right: 3%;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .containerr {
+    width: 1128px;
+    .main-service {
+      display: flex;
+      .left-part {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          margin-left: 0;
+        }
+        .sendBtn {
+          display: flex;
+          border-radius: 8px;
+          border: 1px solid #171717;
+          opacity: 0.8;
+          width: 179px;
+          height: 48px;
+          p {
+            margin: 10px auto;
+          }
+        }
+      }
+      .right-part {
+        padding-left: 140px;
+        display: flex;
+        gap: 70px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          li {
+            margin-left: 0;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyrights {
+  .containerr {
+    padding: 15px 0px 15px 0px;
+    width: 1128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    .all-right {
+      margin-left: 0;
+      padding-top: 22px;
+    }
+    .apps {
+      margin-right: 0px;
+      display: flex;
+      gap: 32px;
+    }
+  }
+}

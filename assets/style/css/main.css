@@ -14,6 +14,7 @@ li a {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 header .upper-section {
@@ -75,7 +76,13 @@ header nav ul li a {
   font-weight: 500;
 }
 
-.swiper .container .featured-productions h1 {
+.bags .box h1 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.swiper .containerr .featured-productions h1 {
   color: #000;
   font-family: "Poppins";
   font-size: 32px;
@@ -83,7 +90,7 @@ header nav ul li a {
   font-weight: 500;
   line-height: 170%; /* 54.4px */
 }
-.swiper .container .featured-productions a {
+.swiper .containerr .featured-productions a {
   color: #000;
   text-align: center;
   font-family: "Poppins";
@@ -92,7 +99,41 @@ header nav ul li a {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-.swiper .container .featured-products .featured-card .card-body p {
+.swiper .containerr .bestsellers h1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 54.4px */
+}
+.swiper .containerr .bestsellers a {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .containerr .discount-productions h1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 54.4px */
+}
+.swiper .containerr .discount-productions a {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .containerr .featured-products .featured-card .card-body p {
   color: #000;
   font-family: "Poppins";
   font-size: 16px;
@@ -100,7 +141,7 @@ header nav ul li a {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-.swiper .container .featured-products .featured-card .card-body .product-price .text1 {
+.swiper .containerr .featured-products .featured-card .card-body .product-price .text1 {
   color: #f75145;
   font-family: "Poppins";
   font-size: 20px;
@@ -108,7 +149,7 @@ header nav ul li a {
   font-weight: 600;
   line-height: 170%; /* 34px */
 }
-.swiper .container .featured-products .featured-card .card-body .product-price .text2 {
+.swiper .containerr .featured-products .featured-card .card-body .product-price .text2 {
   color: rgba(54, 54, 54, 0.75);
   font-family: "Poppins";
   font-size: 16px;
@@ -123,6 +164,31 @@ header nav ul li a {
   font-weight: 500;
   margin-top: 6px;
   margin-bottom: 48px;
+}
+
+.services .containerr .top-services h1 {
+  color: #000;
+  font-family: "Palanquin", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+}
+.services .containerr .main-service .right-part li a {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins ,sans-herif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+.services .containerr .main-service .right-part li a b {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
 }
 
 .hero-section button {
@@ -380,19 +446,199 @@ header nav ul li {
 .product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .light-brown {
   background: #895c31;
 }
+
+header .upper-section {
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+}
+header .snobella-section .containerr .logo {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Palanquin";
+}
+header .snobella-section .containerr input {
+  color: gray;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
+}
+header .snobella-section .containerr ul a {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500px;
+  color: black;
+}
+header .snobella-section .containerr ul i {
+  width: 24px;
+  height: 24px;
+}
+header nav ul li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+header nav ul li a {
+  color: #273142;
+}
+
+.hero-section h1 {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.hero-section h2 {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+}
+.hero-section p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero-section button {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bags .box h1 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.swiper .containerr .featured-productions h1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 54.4px */
+}
+.swiper .containerr .featured-productions a {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .containerr .bestsellers h1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 54.4px */
+}
+.swiper .containerr .bestsellers a {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .containerr .discount-productions h1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 54.4px */
+}
+.swiper .containerr .discount-productions a {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .containerr .featured-products .featured-card .card-body p {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.swiper .containerr .featured-products .featured-card .card-body .product-price .text1 {
+  color: #f75145;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 34px */
+}
+.swiper .containerr .featured-products .featured-card .card-body .product-price .text2 {
+  color: rgba(54, 54, 54, 0.75);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+
+.product-list-section .containerr h1 {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 6px;
+  margin-bottom: 48px;
+}
+
+.services .containerr .top-services h1 {
+  color: #000;
+  font-family: "Palanquin", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+}
+.services .containerr .main-service .right-part li a {
+  color: rgba(33, 33, 33, 0.75);
+  font-family: "Poppins ,sans-herif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+.services .containerr .main-service .right-part li a b {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+}
+
+.hero-section button {
+  padding: 12px 56px 13px 57px;
+  margin-top: 60px;
+}
+
 .hero-section {
   width: 100%;
   height: 584;
   background-color: #ffe2e0;
 }
-.hero-section .container {
+.hero-section .containerr {
   width: 1128px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 160px;
 }
-.hero-section .container .hero-img {
+.hero-section .containerr .hero-img {
   width: 642px;
   height: 535px;
 }
@@ -401,32 +647,72 @@ header nav ul li {
   width: 100%;
   height: 144px;
   background: #f7f7f7;
+  margin-bottom: 80px;
 }
-.guarantee-section .container {
+.guarantee-section .containerr {
   width: 1128px;
 }
-.guarantee-section .container ul {
+.guarantee-section .containerr ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 0;
   gap: 47px;
 }
-.guarantee-section .container ul li {
-  margin-top: 48px;
+.guarantee-section .containerr ul li {
+  margin: 48px 0px 0px 0px;
 }
-.guarantee-section .container ul li img {
+.guarantee-section .containerr ul li img {
   width: 48px;
   height: 48px;
+}
+
+.bags {
+  margin-bottom: 96px;
+}
+.bags .containerr {
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+.bags .containerr .box {
+  width: 264px;
+  height: 162px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  position: relative;
+}
+.bags .containerr .box h1 {
+  margin: 24px 0 0 24px;
+}
+.bags .containerr .box img {
+  width: 180px;
+  height: 114px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.bags .containerr .swipp-btn {
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #f5f5f5;
+  position: absolute;
+  top: 45%;
+  right: -1%;
 }
 
 .swiper {
   width: 100%;
 }
-.swiper .container {
+.swiper .containerr {
   width: 1128px;
 }
-.swiper .container .featured-productions {
+.swiper .containerr .featured-productions {
   width: 100%;
   height: 54px;
   display: flex;
@@ -434,6 +720,146 @@ header nav ul li {
   gap: 650px;
   margin-bottom: 32px;
 }
-.swiper .container .featured-productions h1 {
+.swiper .containerr .featured-productions h1 {
   padding: 13px 0 14px 0;
+  margin-left: 0px;
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 96px;
+}
+.swiper .containerr {
+  width: 1128px;
+}
+.swiper .containerr .bestsellers {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 650px;
+  margin-bottom: 32px;
+}
+.swiper .containerr .bestsellers h1 {
+  margin: 5px 0px 0px 0px;
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper .containerr {
+  width: 1128px;
+}
+.swiper .containerr .discount-productions {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 650px;
+  margin-bottom: 32px;
+}
+.swiper .containerr .discount-productions h1 {
+  padding: 13px 0 14px 0;
+}
+
+.services {
+  width: 100%;
+  background-color: #f7f7f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.services .line {
+  width: 100%;
+  border: 1px solid rgba(39, 49, 66, 0.15);
+  margin-bottom: 56px;
+}
+.services .top-service .containerr {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.services .top-service .containerr h1 {
+  margin-left: 0px;
+}
+.services .top-service .containerr .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 0px;
+  margin-left: 468px;
+  width: 504px;
+  height: 48px;
+}
+.services .top-service .containerr .search input {
+  width: 504px;
+  height: 48px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(158, 158, 158, 0.35);
+  background: #fff;
+}
+.services .top-service .containerr .search i {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 3%;
+  font-size: 24px;
+}
+.services .containerr {
+  width: 1128px;
+}
+.services .containerr .main-service {
+  display: flex;
+}
+.services .containerr .main-service .left-part {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .containerr .main-service .left-part p {
+  margin-left: 0;
+}
+.services .containerr .main-service .left-part .sendBtn {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #171717;
+  opacity: 0.8;
+  width: 179px;
+  height: 48px;
+}
+.services .containerr .main-service .left-part .sendBtn p {
+  margin: 10px auto;
+}
+.services .containerr .main-service .right-part {
+  padding-left: 140px;
+  display: flex;
+  gap: 70px;
+}
+.services .containerr .main-service .right-part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services .containerr .main-service .right-part ul li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.copyrights .containerr {
+  padding: 15px 0px 15px 0px;
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyrights .containerr .all-right {
+  margin-left: 0;
+  padding-top: 22px;
+}
+.copyrights .containerr .apps {
+  margin-right: 0px;
+  display: flex;
+  gap: 32px;
 }/*# sourceMappingURL=main.css.map */
