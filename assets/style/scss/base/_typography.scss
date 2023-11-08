@@ -73,10 +73,16 @@ header {
     font-weight: 500;
   }
 }
-
-// guarantee section
-// .guarantee-section {
-// }
+//  bag card section
+.bags {
+  .box {
+    h1 {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
 
 //swiper section
 .swiper {
@@ -179,7 +185,18 @@ header {
     }
   }
 }
-
+// product list page
+.product-list-section {
+  .containerr {
+    h1 {
+      font-family: "Poppins";
+      font-size: 40px;
+      font-weight: 500;
+      margin-top: 6px;
+      margin-bottom: 48px;
+    }
+  }
+}
 .services {
   .containerr {
     .top-services {
