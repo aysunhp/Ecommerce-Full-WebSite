@@ -1,0 +1,165 @@
+.product-list-section {
+  width: 100%;
+
+  .containerr {
+    width: 1128px;
+    .product-list-navigation {
+      margin-top: 24px;
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 210px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        li {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.product-list {
+  .containerr {
+    width: 1128px;
+    margin-top: 48px;
+    gap: 58px;
+    .categories-section {
+      .categories {
+        border: 1px solid #c8c8c8;
+        border-radius: 5px;
+        margin-bottom: 24px;
+        .categories-title {
+          margin: 0;
+          padding: 40px;
+          display: flex;
+          justify-content: flex-start;
+          gap: 113px;
+          .category-name {
+            margin-left: 0;
+            font-weight: 600;
+          }
+        }
+        .categories-content {
+          padding-bottom: 8px;
+          ul {
+            li {
+              margin-bottom: 16px;
+              margin-left: 8px;
+            }
+          }
+          input {
+            margin-bottom: 16px;
+            margin-left: 40px;
+          }
+          .price-range {
+            display: flex;
+            margin: 0 0 33px 40px;
+            .less {
+              border-radius: 8px;
+              border: 1px solid #c8c8c8;
+              width: 72px;
+              height: 40px;
+              padding: 7px 14px 7px 21px;
+              margin: 0;
+            }
+            .minus {
+              margin: 5px 6px 0px 6px;
+            }
+            .more {
+              border-radius: 8px;
+              border: 1px solid #c8c8c8;
+              width: 72px;
+              height: 40px;
+              margin: 0;
+              padding: 7px 14px 7px 21px;
+            }
+            .search-btn {
+              margin: 0 0 0 15px;
+              padding: 10px 16px 10px 15px;
+              width: 51px;
+              height: 40px;
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+          .size-range {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 25px;
+            .size {
+              width: 64px;
+              height: 40px;
+              padding: 7px 22px 6px 23px;
+              border-radius: 8px;
+              border: 1px solid #c8c8c8;
+              margin: 0px;
+            }
+            .xs {
+              margin-left: 40px;
+            }
+          }
+          .colors {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 40px 30px 40px;
+            .color-wrapper {
+              width: 26px;
+              height: 26px;
+              padding: 3px;
+              border-radius: 50px;
+              border: 1px solid rgba(39, 49, 66, 0.75);
+              margin: 0px 12px 11px 0px;
+              .color-box {
+                border-radius: 50px;
+                width: 18px;
+                height: 18px;
+              }
+              .dark-green {
+                background: #275240;
+              }
+              .blue {
+                background: #0085ff;
+              }
+              .dark-brown {
+                background: #3d2a33;
+              }
+              .brown {
+                background: #773838;
+              }
+              .black {
+                background: #000;
+              }
+              .green {
+                background: #307e46;
+              }
+              .orange {
+                background: #ff6b00;
+              }
+              .yellow {
+                background: #d6b73b;
+              }
+              .violet {
+                background: #7c4dff;
+              }
+              .redish-orange {
+                background: #f75145;
+              }
+              .dark-red {
+                background: #842759;
+              }
+              .light-brown {
+                background: #895c31;
+              }
+            }
+          }
+        }
+      }
+    }
+    .products-section {
+    }
+  }
+}
