@@ -312,43 +312,50 @@ header nav ul li {
   margin-left: 0px;
 }
 
+.product-list {
+  padding: 0px;
+}
 .product-list .containerr {
   width: 1128px;
   margin-top: 48px;
-  gap: 58px;
 }
-.product-list .containerr .categories-section .categories {
+.product-list .containerr .row .categories-section {
+  width: 326px;
+  padding: 0px;
+  margin-left: 7px;
+}
+.product-list .containerr .row .categories-section .categories {
   border: 1px solid #c8c8c8;
   border-radius: 5px;
   margin-bottom: 24px;
 }
-.product-list .containerr .categories-section .categories .categories-title {
+.product-list .containerr .row .categories-section .categories .categories-title {
   margin: 0;
   padding: 40px;
   display: flex;
   justify-content: flex-start;
   gap: 113px;
 }
-.product-list .containerr .categories-section .categories .categories-title .category-name {
+.product-list .containerr .row .categories-section .categories .categories-title .category-name {
   margin-left: 0;
   font-weight: 600;
 }
-.product-list .containerr .categories-section .categories .categories-content {
+.product-list .containerr .row .categories-section .categories .categories-content {
   padding-bottom: 8px;
 }
-.product-list .containerr .categories-section .categories .categories-content ul li {
+.product-list .containerr .row .categories-section .categories .categories-content ul li {
   margin-bottom: 16px;
   margin-left: 8px;
 }
-.product-list .containerr .categories-section .categories .categories-content input {
+.product-list .containerr .row .categories-section .categories .categories-content input {
   margin-bottom: 16px;
   margin-left: 40px;
 }
-.product-list .containerr .categories-section .categories .categories-content .price-range {
+.product-list .containerr .row .categories-section .categories .categories-content .price-range {
   display: flex;
   margin: 0 0 33px 40px;
 }
-.product-list .containerr .categories-section .categories .categories-content .price-range .less {
+.product-list .containerr .row .categories-section .categories .categories-content .price-range .less {
   border-radius: 8px;
   border: 1px solid #c8c8c8;
   width: 72px;
@@ -356,10 +363,10 @@ header nav ul li {
   padding: 7px 14px 7px 21px;
   margin: 0;
 }
-.product-list .containerr .categories-section .categories .categories-content .price-range .minus {
+.product-list .containerr .row .categories-section .categories .categories-content .price-range .minus {
   margin: 5px 6px 0px 6px;
 }
-.product-list .containerr .categories-section .categories .categories-content .price-range .more {
+.product-list .containerr .row .categories-section .categories .categories-content .price-range .more {
   border-radius: 8px;
   border: 1px solid #c8c8c8;
   width: 72px;
@@ -367,21 +374,21 @@ header nav ul li {
   margin: 0;
   padding: 7px 14px 7px 21px;
 }
-.product-list .containerr .categories-section .categories .categories-content .price-range .search-btn {
+.product-list .containerr .row .categories-section .categories .categories-content .price-range .search-btn {
   margin: 0 0 0 15px;
   padding: 10px 16px 10px 15px;
   width: 51px;
   height: 40px;
 }
-.product-list .containerr .categories-section .categories .categories-content .price-range .search-btn i {
+.product-list .containerr .row .categories-section .categories .categories-content .price-range .search-btn i {
   font-size: 20px;
 }
-.product-list .containerr .categories-section .categories .categories-content .size-range {
+.product-list .containerr .row .categories-section .categories .categories-content .size-range {
   display: flex;
   gap: 14px;
   margin-bottom: 25px;
 }
-.product-list .containerr .categories-section .categories .categories-content .size-range .size {
+.product-list .containerr .row .categories-section .categories .categories-content .size-range .size {
   width: 64px;
   height: 40px;
   padding: 7px 22px 6px 23px;
@@ -389,15 +396,15 @@ header nav ul li {
   border: 1px solid #c8c8c8;
   margin: 0px;
 }
-.product-list .containerr .categories-section .categories .categories-content .size-range .xs {
+.product-list .containerr .row .categories-section .categories .categories-content .size-range .xs {
   margin-left: 40px;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors {
+.product-list .containerr .row .categories-section .categories .categories-content .colors {
   display: flex;
   flex-wrap: wrap;
   padding: 0 40px 30px 40px;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper {
   width: 26px;
   height: 26px;
   padding: 3px;
@@ -405,46 +412,56 @@ header nav ul li {
   border: 1px solid rgba(39, 49, 66, 0.75);
   margin: 0px 12px 11px 0px;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .color-box {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .color-box {
   border-radius: 50px;
   width: 18px;
   height: 18px;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .dark-green {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .dark-green {
   background: #275240;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .blue {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .blue {
   background: #0085ff;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .dark-brown {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .dark-brown {
   background: #3d2a33;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .brown {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .brown {
   background: #773838;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .black {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .black {
   background: #000;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .green {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .green {
   background: #307e46;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .orange {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .orange {
   background: #ff6b00;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .yellow {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .yellow {
   background: #d6b73b;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .violet {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .violet {
   background: #7c4dff;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .redish-orange {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .redish-orange {
   background: #f75145;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .dark-red {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .dark-red {
   background: #842759;
 }
-.product-list .containerr .categories-section .categories .categories-content .colors .color-wrapper .light-brown {
+.product-list .containerr .row .categories-section .categories .categories-content .colors .color-wrapper .light-brown {
   background: #895c31;
+}
+.product-list .containerr .row .products-section {
+  padding: 0px;
+}
+.product-list .containerr .row .products-section .featured-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-list .containerr .row .products-section .featured-products .card {
+  margin: 0px 0px 48px 24px;
 }
 
 header .upper-section {
