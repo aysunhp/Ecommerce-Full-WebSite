@@ -402,13 +402,85 @@ header nav ul li a {
 }
 
 .services {
-  background: #f7f7f9;
+  width: 100%;
+  background-color: #f7f7f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.services .containerr {
+  width: 1128px;
 }
 .services .containerr .top-service {
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
-  height: 115px;
   justify-content: space-between;
+}
+.services .containerr .top-service .search {
+  display: flex;
+  align-items: center;
+}
+.services .containerr .top-service .search input {
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-left: 1px solid rgba(158, 158, 158, 0.35);
+  border-top: 1px solid rgba(158, 158, 158, 0.35);
+  border-bottom: 1px solid rgba(158, 158, 158, 0.35);
+  border-right: none;
+  background: #fff;
+}
+.services .containerr .top-service .search i {
+  padding: 12px 12px 11px 12px;
+  font-size: 25px;
+  border-right: 1px solid rgba(158, 158, 158, 0.35);
+  border-top: 1px solid rgba(158, 158, 158, 0.35);
+  border-bottom: 1px solid rgba(158, 158, 158, 0.35);
+  background-color: #fff;
+}
+.services .containerr .main-service {
+  display: flex;
+}
+.services .containerr .main-service .left-part {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .containerr .main-service .left-part .sendBtn {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #171717;
+  opacity: 0.8;
+  width: 179px;
+  height: 48px;
+}
+.services .containerr .main-service .left-part .sendBtn p {
+  margin: 10px auto;
+}
+.services .containerr .main-service .right-part {
+  padding-left: 140px;
+  display: flex;
+  gap: 70px;
+}
+.services .containerr .main-service .right-part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copyrights .containerr {
+  padding: 15px 0;
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyrights .containerr p {
+  margin-top: 7px;
 }
 
 .hero-section {
