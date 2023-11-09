@@ -196,7 +196,29 @@ header {
       margin-bottom: 48px;
     }
   }
+  .result-featured {
+    .result-featured-box {
+      .featured {
+        span {
+          font-family: "Poppins";
+          font-size: 16px;
+          font-weight: 400;
+        }
+        i {
+          margin-top: 4px;
+          font-size: 20px;
+        }
+      }
+      .result {
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 7px;
+      }
+    }
+  }
 }
+
 .services {
   .containerr {
     .top-services {
