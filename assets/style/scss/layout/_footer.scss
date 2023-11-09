@@ -47,10 +47,11 @@
     .main-service {
       display: flex;
       .left-part {
-        width: 40%;
+        width: 326px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 35px;
         p {
           margin-left: 0;
         }
@@ -61,6 +62,7 @@
           opacity: 0.8;
           width: 179px;
           height: 48px;
+          margin-bottom: 40px;
           p {
             margin: 10px auto;
           }

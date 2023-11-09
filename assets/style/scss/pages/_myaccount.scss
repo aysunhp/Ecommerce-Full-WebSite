@@ -1,0 +1,147 @@
+.myAccount {
+  padding-bottom: 115px;
+  .containerr {
+    width: 1128px;
+    .profile-section {
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      .myProfile {
+        width: 264px;
+        height: 332.6px;
+        border-radius: 8px;
+        border: 1px solid #e4e4e4;
+        .profile-info {
+          padding: 10px;
+          display: flex;
+          border: 1px solid #e4e4e4;
+          .img-profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .profile-user {
+            display: flex;
+            flex-direction: column;
+            h1,
+            p {
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        .tabs {
+          height: 52px;
+          display: flex;
+          gap: 12px;
+          padding: 16px;
+          background: #f9fbfb;
+          border: 1px solid #e4e4e4;
+          img {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .order-section {
+        width: 840px;
+        thead {
+          border-radius: 8px;
+          border: 1px solid #e4e4e4;
+        }
+        tbody {
+          border-radius: 8px;
+          border: 1px solid #e4e4e4;
+        }
+
+        .address-boxes {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          .adding-box {
+            margin: 0;
+            text-align: center;
+            img {
+              margin: 107px 0 12px 0;
+            }
+            p {
+              margin: 0;
+            }
+          }
+          .added-box {
+            margin: 0;
+            padding: 12px 20px;
+            .location {
+              display: flex;
+              justify-content: center;
+              justify-content: space-between;
+              p {
+                padding: 0;
+                margin: 0;
+              }
+              img {
+                padding: 0;
+                margin: 0;
+              }
+            }
+            hr {
+              margin: 9px 0 16px 0;
+            }
+            .info {
+              h1 {
+                margin: 0 0 16px 0;
+              }
+              p {
+                margin: 0 0 8px 0;
+              }
+            }
+            .buttons {
+              display: flex;
+              justify-content: center;
+              justify-content: space-between;
+              button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 9px;
+                img {
+                  margin: 0;
+                }
+                p {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .favorites {
+          width: 767px;
+          margin: 0;
+          display: flex;
+          gap: 47px;
+          flex-wrap: wrap;
+          .card {
+            padding: 12px 24px;
+            margin: 0;
+            width: 360px;
+            height: 508px;
+            .card-body {
+              padding: 16px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
