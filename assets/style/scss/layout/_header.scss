@@ -79,19 +79,21 @@ header {
   }
 
   nav {
-    width: 1128px;
-
-    ul {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: left;
-      margin-left: 220px;
-      padding-left: 0px;
-      margin-bottom: 0;
-      li {
-        margin: 15px 45px 0px 0;
-        padding: 6px 6px 6px 0px;
+    width: 100%;
+    .containerr {
+      width: 1128px;
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        margin-left: 0px;
+        padding-left: 0px;
+        // margin-bottom: 0;
+        li {
+          margin: 15px 45px 0px 0;
+          padding: 6px 6px 6px 0px;
+        }
       }
     }
   }
