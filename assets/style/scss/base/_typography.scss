@@ -379,3 +379,149 @@ header {
     }
   }
 }
+
+// product page
+.product-page {
+  .product-info {
+    .containerr {
+      .row {
+        .left {
+          .product {
+            .discount-box {
+              color: #fff;
+              font-family: "Poppins";
+              font-size: 16px;
+              font-weight: 500;
+            }
+            .heart-btn {
+              i {
+                color: #df4244;
+                font-size: 28px;
+              }
+            }
+          }
+        }
+        .right {
+          h2 {
+            width: 512px;
+            color: #212121;
+            font-family: "Rubik";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            margin: 0px;
+            margin-left: 32px;
+            margin-bottom: 8px;
+          }
+          .rate-reviews {
+            .rate {
+              i {
+                color: #ffdd45;
+                font-size: 14px;
+              }
+              .review {
+                font-family: "Poppins";
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+          }
+          .piece-price {
+            .box {
+              .price-box {
+                color: rgba(33, 33, 33, 0.9);
+                font-family: "Poppins";
+                font-size: 18px;
+                font-weight: 500;
+              }
+              .piece-box {
+                color: rgba(33, 33, 33, 0.9);
+                font-family: "Poppins";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                margin-top: 4px;
+              }
+            }
+          }
+          .size,
+          .color {
+            .categories-title {
+              .category-name {
+                h6 {
+                  color: #212121;
+                  font-family: "Rubik";
+                  font-size: 16px;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          a {
+            color: #000;
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: underline;
+            margin-left: 35px;
+          }
+        }
+      }
+    }
+  }
+  .description-review {
+    .containerr {
+      .descriptions,
+      .reviews {
+        color: #858585;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .reviews-box {
+      .review-containerr {
+        .review {
+          .name-rate {
+            .name {
+              font-family: "Rubik";
+              font-size: 20px;
+              font-weight: 500;
+            }
+            .rate {
+              i {
+                color: #ffdd45;
+                font-size: 14px;
+              }
+            }
+          }
+          .review-time,
+          .review-content {
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+// you may also like section
+.you-may-also-like {
+  .also-liked-products-heading {
+    .containerr {
+      margin-bottom: 32px;
+      h1 {
+        font-family: "Rubik";
+        font-size: 32px;
+        font-weight: 500;
+      }
+      .view-all-products {
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}

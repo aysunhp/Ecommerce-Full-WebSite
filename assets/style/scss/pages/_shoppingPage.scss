@@ -129,8 +129,9 @@
 }
 
 section {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   .cart-guarantee-section {
+    width: 100%;
     .containerr {
       width: 1128px;
       ul {
@@ -139,14 +140,17 @@ section {
         display: flex;
         border: 1px solid #e4e4e4;
         width: 100%;
+        .line {
+          width: 0px;
+          height: 157.5px;
+          border: 1px solid #e4e4e4;
+          margin-top: 43px;
+        }
         li {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 16px;
-          width: 25%;
-          padding: 0 45px;
-          border-right: 1px solid #e4e4e4;
+          gap: 12px;
           img {
             width: 48px;
             height: 48px;
@@ -154,6 +158,12 @@ section {
           }
           p {
             text-align: center;
+            margin: 0px 48px 37px 48px;
+          }
+          a {
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 500;
           }
         }
       }

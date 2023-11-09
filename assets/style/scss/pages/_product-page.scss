@@ -1,0 +1,289 @@
+.product-page {
+  width: 100%;
+  .containerr {
+    width: 1128px;
+    margin-bottom: 32px;
+    .product-list-navigation {
+      margin-top: 24px;
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 210px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        li {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  .product-info {
+    margin-bottom: 103px;
+    .containerr {
+      .row {
+        .left {
+          .product-imgs {
+            margin: 0px;
+            padding: 0px;
+            .chevron-up {
+              width: 24px;
+              height: 24px;
+              i {
+                font-size: 24px;
+              }
+            }
+            .product-img {
+              width: 72px;
+              height: 94px;
+              border-radius: 3px;
+              border: 1px solid #e4e4e4;
+              margin-bottom: 16px;
+              img {
+                width: 70px;
+                height: 79px;
+              }
+            }
+            .last {
+              margin-bottom: 0px;
+            }
+            .chevron-down {
+              width: 24px;
+              height: 24px;
+              i {
+                font-size: 24px;
+              }
+            }
+          }
+          .product {
+            width: 456px;
+            height: 473px;
+            border-radius: 3px;
+            padding: 0px;
+            margin-left: 24px;
+            background: #f9f9f9;
+            position: relative;
+            .discount-box {
+              width: 79px;
+              height: 32px;
+              border-radius: 8px;
+              background: #df4244;
+              position: absolute;
+              top: 24px;
+              left: 24px;
+              padding: 4px 10px 1px 22px;
+            }
+            .heart-btn {
+              position: absolute;
+              top: 24px;
+              right: 24px;
+            }
+            .product-image {
+              width: 100%;
+              height: 100%;
+              padding: 38px 100px 56px 60px;
+              img {
+                width: 340px;
+                height: 379px;
+              }
+            }
+          }
+        }
+        .right {
+          .rate-reviews {
+            display: flex;
+            margin-bottom: 24px;
+            gap: 9px;
+            .rate {
+              margin: 0px;
+              margin-left: 32px;
+            }
+            .review {
+              margin: 0px;
+            }
+          }
+          .piece-price {
+            // margin-left: 0px;
+            margin-bottom: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            .box {
+              width: 224px;
+              height: 60px;
+              border-radius: 8px;
+              border: 1px solid #e4e4e4;
+              padding: 15px 18px 14px 18px;
+              display: flex;
+              //   margin: 0px;
+              margin-right: 9px;
+            }
+          }
+          .size-color {
+            display: flex;
+            gap: 28px;
+            margin-bottom: 40px;
+            .size {
+              //   margin: 0px;
+              .categories-title {
+                margin-bottom: 16px;
+              }
+              .categories-content {
+                .size-range {
+                  display: flex;
+                  gap: 14px;
+                  //   margin: 0px;
+                  .size-box {
+                    width: 64px;
+                    height: 40px;
+                    padding: 7px 22px 6px 23px;
+                    border-radius: 8px;
+                    border: 1px solid #c8c8c8;
+                    margin: 0px;
+                  }
+                }
+              }
+            }
+            .color {
+              //   margin: 0px;
+              .category-name {
+                margin-bottom: 16px;
+              }
+              .categories-content {
+                .colors {
+                  display: flex;
+                  flex-wrap: wrap;
+                  .color-wrapper {
+                    width: 26px;
+                    height: 26px;
+                    padding: 3px;
+                    border-radius: 50px;
+                    border: 1px solid rgba(39, 49, 66, 0.75);
+                    margin: 0px 12px 11px 0px;
+                    .color-box {
+                      border-radius: 50px;
+                      width: 18px;
+                      height: 18px;
+                    }
+                    .orange {
+                      background: #cd5c0b;
+                    }
+                    .blue {
+                      background: #0085ff;
+                    }
+                    .green {
+                      background: #35783b;
+                    }
+                    .pink {
+                      background: #ed0875;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .card-cash {
+            margin-left: 35px;
+            margin-bottom: 16px;
+            .add-to-card-btn {
+              width: 244px;
+              height: 52px;
+              padding: 12px 74px;
+            }
+            .cash-payment-btn {
+              width: 244px;
+              height: 52px;
+              padding: 12px 63px;
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .description-review {
+    width: 100%;
+    .containerr {
+      width: 1128px;
+      display: flex;
+      gap: 48px;
+      margin-bottom: 16px;
+      .descriptions {
+        margin: 0px;
+      }
+      .reviews {
+        margin: 0px;
+      }
+    }
+    .line {
+      width: 1128px;
+      height: 1px;
+      border: 1px solid rgba(39, 49, 66, 0.15);
+      margin-bottom: 40px;
+    }
+    .reviews-box {
+      width: 100%;
+      .review-containerr {
+        width: 1128px;
+        .review {
+          margin-left: 0px;
+          width: 960px;
+          border-radius: 8px;
+          border: 1px solid rgba(33, 33, 33, 0.28);
+          padding: 24px 41px 24px 41px;
+          margin-bottom: 24px;
+          .name-rate {
+            display: flex;
+            gap: 24px;
+            .name {
+              margin: 0px;
+              margin-bottom: 8px;
+            }
+            .rate {
+              margin: 0px;
+            }
+          }
+          .review-time {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+// you may also like section
+.you-may-also-like {
+  width: 100%;
+  .also-liked-products-heading {
+    width: 100%;
+    .containerr {
+      width: 1128px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      h1 {
+        margin: 0px;
+      }
+      .view-all-products {
+        position: absolute;
+        top: 6px;
+        right: 0px;
+      }
+    }
+  }
+  .also-liked-products {
+    width: 100%;
+    margin-bottom: 114px;
+    .containerr {
+      width: 1128px;
+      display: flex;
+      gap: 24px;
+      .card {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+// card guarantee section
