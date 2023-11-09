@@ -1,25 +1,28 @@
 // hero section
-.hero-section {
-  width: 1530px;
-  height: 584;
-  background-color: #ffe2e0;
-  .containerr {
-    width: 1128px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 0;
-    margin-left: 202px;
-    .hero-img {
-      width: 642px;
-      height: 535px;
-      margin-right: 8px;
+#hero-section {
+  padding-bottom: 0px;
+  .hero-section {
+    width: 100%;
+    height: 584;
+    background-color: #ffe2e0;
+
+    .containerr {
+      width: 1128px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .hero-img {
+        width: 642px;
+        height: 535px;
+        margin-right: 8px;
+      }
     }
   }
 }
 // guarantee section
 .guarantee-section {
-  width: 1530px;
+  width: 100%;
   height: 144px;
   background: #f7f7f7;
   margin-bottom: 80px;
@@ -44,6 +47,7 @@
 }
 //  bag card section
 .bags {
+  width: 100%;
   margin-bottom: 96px;
   .containerr {
     width: 1128px;
