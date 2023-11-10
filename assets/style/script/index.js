@@ -1,12 +1,12 @@
 let featuredProducts = document.querySelector(".featured-products");
 
 fetch("http://localhost:3000/products")
-  .then((res) => res.json())
-  .then((data) => {
-    data.forEach((element) => {
-      let productDate = new Date(element.createDate);
-      let currentDate = new Date();
-      featuredProducts.innerHTML += `
+    .then((res) => res.json())
+    .then((data) => {
+        data.forEach((element) => {
+            let productDate = new Date(element.createDate);
+            let currentDate = new Date();
+            featuredProducts.innerHTML += `
         <div
             class="card"
           >
@@ -18,33 +18,28 @@ fetch("http://localhost:3000/products")
             />
             <div class="card-body">
               <div class="star-rating">
-                ${
-                  element.rating >= 1
+                ${element.rating >= 1
                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                     : ""
                 }
                 
-                ${
-                  element.rating >= 2
+                ${element.rating >= 2
                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                     : ""
                 }
                 
-                ${
-                  element.rating >= 3
+                ${element.rating >= 3
                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                     : ""
                 }
 
-                ${
-                  element.rating >= 4
+                ${element.rating >= 4
                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                     : ""
                 }
 
                 
-                ${
-                  element.rating == 5
+                ${element.rating == 5
                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                     : ""
                 }
@@ -74,14 +69,13 @@ fetch("http://localhost:3000/products")
                     line-height: 170%;
                   "
                 >
-                    ${
-                      element.discountPercent !== 0
-                        ? `$${(
-                            element.price -
-                            element.price * (element.discountPercent / 100)
-                          ).toFixed(2)}`
-                        : `$${element.price.toFixed(2)}`
-                    }
+                    ${element.discountPercent !== 0
+                    ? `$${(
+                        element.price -
+                        element.price * (element.discountPercent / 100)
+                    ).toFixed(2)}`
+                    : `$${element.price.toFixed(2)}`
+                }
                   <span
                     class="text2"
                     style="
@@ -94,11 +88,10 @@ fetch("http://localhost:3000/products")
                       margin-left: 18px;
                     "
                   >
-                  ${
-                    element.discountPercent !== 0
-                      ? `From $${element.price.toFixed(2)}`
-                      : ""
-                  }
+                  ${element.discountPercent !== 0
+                    ? `From $${element.price.toFixed(2)}`
+                    : ""
+                }
                   </span>
                 </p>
               </div>
@@ -127,11 +120,10 @@ fetch("http://localhost:3000/products")
               </button>
               <button
                 style="
-                  background-color: ${
-                    currentDate.getTime() - productDate.getTime() <= 3600000
-                      ? "#43D167"
-                      : `${element.discountPercent ? "#DF4244" : "transparent"}`
-                  };
+                  background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
+                    ? "#43D167"
+                    : `${element.discountPercent ? "#DF4244" : "transparent"}`
+                };
                   width: 79px;
                   height: 32px;
                   border-radius: 8px;
@@ -151,15 +143,13 @@ fetch("http://localhost:3000/products")
                     line-height: 170%; /* 27.2px */
                   "
                 >
-                  ${
-                    currentDate.getTime() - productDate.getTime() <= 3600000
-                      ? "New"
-                      : `${
-                          element.discountPercent
-                            ? `${element.discountPercent}%`
-                            : ""
-                        }`
-                  }
+                  ${currentDate.getTime() - productDate.getTime() <= 3600000
+                    ? "New"
+                    : `${element.discountPercent
+                        ? `${element.discountPercent}%`
+                        : ""
+                    }`
+                }
                 </p>
               </button>
               <img
@@ -170,5 +160,49 @@ fetch("http://localhost:3000/products")
             </div>
           </div>
         `;
+        });
     });
-  });
+let signUp = document.querySelector(".sign-up");
+let logOut = document.querySelector(".loging-out");
+let account = document.querySelector(".account");
+console.log(signUp)
+let userArr;
+let localUser = JSON.parse(localStorage.getItem("users"));
+let sessionUser = JSON.parse(sessionStorage.getItem("users"));
+if (localUser) {
+    userArr = [...localUser];
+} else if (sessionUser) {
+    userArr = [...sessionUser];
+}
+else {
+    userArr = [];
+}
+console.log(userArr)
+if (localUser || sessionUser) {
+    account.classList.replace("d-none", "d-block");
+    logOut.classList.replace("d-none", "d-block");
+    signUp.classList.add("d-none");
+    logOut.addEventListener("click", function (e) {
+        e.preventDefault();
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Log out!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                localStorage.removeItem("users");
+                sessionStorage.removeItem("users");
+                Swal.fire(
+                    'Logged out!',
+                    'success'
+                )
+                document.location.href = "index.html"
+            }
+        })
+
+    })
+}
