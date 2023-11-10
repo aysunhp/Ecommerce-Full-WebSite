@@ -2344,6 +2344,19 @@ section .cart-guarantee-section .containerr ul li a {
 .landing-page .swiper .containerr .bestsellers h1 {
   margin: 5px 0px 0px 0px;
 }
+.landing-page .swiper .containerr .bestsellers-products {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.landing-page .swiper .containerr .bestsellers-products .card {
+  position: relative;
+  width: 360px;
+  height: 508px;
+  border: none;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
 .landing-page .swiper {
   width: 100%;
 }
@@ -2360,6 +2373,19 @@ section .cart-guarantee-section .containerr ul li a {
 }
 .landing-page .swiper .containerr .discount-productions h1 {
   padding: 13px 0 14px 0;
+}
+.landing-page .swiper .containerr .discount-products {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.landing-page .swiper .containerr .discount-products .card {
+  position: relative;
+  width: 360px;
+  height: 508px;
+  border: none;
+  border-radius: 8px;
+  background: #f9f9f9;
 }
 
 body .register-page {

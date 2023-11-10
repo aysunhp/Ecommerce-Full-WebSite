@@ -139,6 +139,20 @@
           margin: 5px 0px 0px 0px;
         }
       }
+      .bestsellers-products {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        .card {
+          position: relative;
+          width: 360px;
+          height: 508px;
+          border: none;
+          border-radius: 8px;
+          background: #f9f9f9;
+        }
+      }
     }
   }
 
@@ -156,6 +170,20 @@
 
         h1 {
           padding: 13px 0 14px 0;
+        }
+      }
+      .discount-products {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        .card {
+          position: relative;
+          width: 360px;
+          height: 508px;
+          border: none;
+          border-radius: 8px;
+          background: #f9f9f9;
         }
       }
     }
