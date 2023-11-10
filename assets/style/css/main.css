@@ -550,6 +550,36 @@ header nav ul li a {
   font-weight: 400;
 }
 
+main .containerr h1 {
+  color: #212121;
+  font-family: "Rubik";
+  font-size: 32px;
+  font-weight: 500;
+}
+main .containerr p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+main .containerr form label {
+  font-family: "Rubik";
+  font-size: 14px;
+  font-weight: 500;
+}
+main .containerr form label .code-forgot .forgot {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+main .containerr form p {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+main .containerr form p strong {
+  font-weight: 500;
+}
+
 .hero-section button {
   padding: 12px 56px 13px 57px;
   margin-top: 60px;
@@ -1717,149 +1747,39 @@ header nav ul li a {
   font-weight: 400;
 }
 
+main .containerr h1 {
+  color: #212121;
+  font-family: "Rubik";
+  font-size: 32px;
+  font-weight: 500;
+}
+main .containerr p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+main .containerr form label {
+  font-family: "Rubik";
+  font-size: 14px;
+  font-weight: 500;
+}
+main .containerr form label .code-forgot .forgot {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+main .containerr form p {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+main .containerr form p strong {
+  font-weight: 500;
+}
+
 .hero-section button {
   padding: 12px 56px 13px 57px;
   margin-top: 60px;
-}
-
-#hero-section {
-  padding-bottom: 0px;
-}
-#hero-section .hero-section {
-  width: 100%;
-  height: 584;
-  background-color: #ffe2e0;
-}
-#hero-section .hero-section .containerr {
-  width: 1128px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#hero-section .hero-section .containerr .hero-img {
-  width: 642px;
-  height: 535px;
-  margin-right: 8px;
-}
-
-.guarantee-section {
-  width: 100%;
-  height: 144px;
-  background: #f7f7f7;
-  margin-bottom: 80px;
-}
-.guarantee-section .containerr {
-  width: 1128px;
-}
-.guarantee-section .containerr ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0;
-  gap: 47px;
-}
-.guarantee-section .containerr ul li {
-  margin: 48px 0px 0px 0px;
-}
-.guarantee-section .containerr ul li img {
-  width: 48px;
-  height: 48px;
-}
-
-.bags {
-  width: 100%;
-  margin-bottom: 96px;
-}
-.bags .containerr {
-  width: 1128px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  position: relative;
-}
-.bags .containerr .box {
-  width: 264px;
-  height: 162px;
-  border-radius: 8px;
-  background: #f5f5f5;
-  position: relative;
-}
-.bags .containerr .box h1 {
-  margin: 24px 0 0 24px;
-}
-.bags .containerr .box img {
-  width: 180px;
-  height: 114px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.bags .containerr .swipp-btn {
-  background-color: white;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 2px solid #f5f5f5;
-  position: absolute;
-  top: 45%;
-  right: -1%;
-}
-
-.swiper {
-  width: 100%;
-}
-.swiper .containerr {
-  width: 1128px;
-}
-.swiper .containerr .featured-productions {
-  width: 1128px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  gap: 673px;
-  margin-bottom: 32px;
-}
-.swiper .containerr .featured-productions h1 {
-  padding: 13px 0 14px 0;
-  margin-left: 0px;
-}
-
-.swiper {
-  width: 100%;
-  margin-bottom: 96px;
-}
-.swiper .containerr {
-  width: 1128px;
-}
-.swiper .containerr .bestsellers {
-  width: 100%;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  gap: 650px;
-  margin-bottom: 32px;
-}
-.swiper .containerr .bestsellers h1 {
-  margin: 5px 0px 0px 0px;
-}
-
-.swiper {
-  width: 100%;
-}
-.swiper .containerr {
-  width: 1128px;
-}
-.swiper .containerr .discount-productions {
-  width: 100%;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  gap: 650px;
-  margin-bottom: 32px;
-}
-.swiper .containerr .discount-productions h1 {
-  padding: 13px 0 14px 0;
 }
 
 .shoppingSection {
@@ -2281,4 +2201,248 @@ section .cart-guarantee-section .containerr ul li a {
   margin-right: 0px;
   display: flex;
   gap: 32px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body main {
+  width: 100%;
+}
+body main .containerr {
+  width: 552px;
+  height: 604px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .containerr h1,
+body main .containerr p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+body main .containerr p {
+  margin-bottom: 25px;
+}
+body main .containerr form {
+  width: 360px;
+}
+body main .containerr form label {
+  margin-bottom: 5px;
+}
+body main .containerr form input {
+  margin-bottom: 25px;
+}
+body main .containerr form .continue-btn {
+  width: 100%;
+  height: 52px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+body main .containerr form .continue-btn button {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body main {
+  width: 100%;
+}
+body main .containerr {
+  width: 552px;
+  height: 604px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .containerr h1,
+body main .containerr p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+body main .containerr p {
+  margin-bottom: 25px;
+}
+body main .containerr form {
+  width: 360px;
+}
+body main .containerr form label {
+  margin-bottom: 5px;
+}
+body main .containerr form input {
+  margin-bottom: 25px;
+}
+body main .containerr form .login-btn {
+  width: 100%;
+  height: 52px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+body main .containerr form .login-btn button {
+  width: 100%;
+  height: 100%;
+}
+body main .containerr form .code-forgot {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  margin-bottom: 5px;
+}
+
+#hero-section {
+  padding-bottom: 0px;
+}
+#hero-section .hero-section {
+  width: 100%;
+  height: 584;
+  background-color: #ffe2e0;
+}
+#hero-section .hero-section .containerr {
+  width: 1128px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#hero-section .hero-section .containerr .hero-img {
+  width: 642px;
+  height: 535px;
+  margin-right: 8px;
+}
+
+.guarantee-section {
+  width: 100%;
+  height: 144px;
+  background: #f7f7f7;
+  margin-bottom: 80px;
+}
+.guarantee-section .containerr {
+  width: 1128px;
+}
+.guarantee-section .containerr ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  gap: 47px;
+}
+.guarantee-section .containerr ul li {
+  margin: 48px 0px 0px 0px;
+}
+.guarantee-section .containerr ul li img {
+  width: 48px;
+  height: 48px;
+}
+
+.bags {
+  width: 100%;
+  margin-bottom: 96px;
+}
+.bags .containerr {
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+.bags .containerr .box {
+  width: 264px;
+  height: 162px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  position: relative;
+}
+.bags .containerr .box h1 {
+  margin: 24px 0 0 24px;
+}
+.bags .containerr .box img {
+  width: 180px;
+  height: 114px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.bags .containerr .swipp-btn {
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #f5f5f5;
+  position: absolute;
+  top: 45%;
+  right: -1%;
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper .containerr {
+  width: 1128px;
+}
+.swiper .containerr .featured-productions {
+  width: 1128px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 673px;
+  margin-bottom: 32px;
+}
+.swiper .containerr .featured-productions h1 {
+  padding: 13px 0 14px 0;
+  margin-left: 0px;
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 96px;
+}
+.swiper .containerr {
+  width: 1128px;
+}
+.swiper .containerr .bestsellers {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 650px;
+  margin-bottom: 32px;
+}
+.swiper .containerr .bestsellers h1 {
+  margin: 5px 0px 0px 0px;
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper .containerr {
+  width: 1128px;
+}
+.swiper .containerr .discount-productions {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 650px;
+  margin-bottom: 32px;
+}
+.swiper .containerr .discount-productions h1 {
+  padding: 13px 0 14px 0;
 }/*# sourceMappingURL=main.css.map */
