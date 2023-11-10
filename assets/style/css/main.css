@@ -2204,10 +2204,6 @@ section .cart-guarantee-section .containerr ul li a {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 body main {
@@ -2253,10 +2249,7 @@ body main .containerr form .continue-btn button {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
   min-height: 100vh;
 }
 body main {
@@ -2289,6 +2282,9 @@ body main .containerr form label {
 }
 body main .containerr form input {
   margin-bottom: 25px;
+}
+body main .containerr form input[type=password] {
+  -webkit-text-security: disc;
 }
 body main .containerr form .login-btn {
   width: 100%;
