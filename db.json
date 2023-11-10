@@ -41,7 +41,7 @@
       "color": "Various",
       "sold": 0,
       "soldCount": 8,
-      "createDate": "2023-11-10"
+      "createDate": "2023-11-10 00:00:00"
     },
     {
       "id": 2,
@@ -58,7 +58,7 @@
       "color": "Various",
       "sold": 0,
       "soldCount": 15,
-      "createDate": "2023-11-11"
+      "createDate": "2023-11-10 00:00:00"
     },
     {
       "id": 3,
@@ -67,7 +67,7 @@
       "categoryFirst": "Postman Bag",
       "categorySecond": "Belt Bag",
       "price": 45,
-      "discountPercent": 15,
+      "discountPercent": 0,
       "comment": [],
       "rating": 4,
       "description": "Classic postman-style bag for everyday use.",
@@ -75,7 +75,7 @@
       "color": "Various",
       "sold": 0,
       "soldCount": 5,
-      "createDate": "2023-11-12"
+      "createDate": "2023-11-10 00:00:00"
     },
     {
       "id": 4,
@@ -92,7 +92,7 @@
       "color": "Vraious",
       "sold": 0,
       "soldCount": 12,
-      "createDate": "2023-11-13"
+      "createDate": "2023-11-10 00:00:00"
     },
     {
       "id": 5,
@@ -101,7 +101,7 @@
       "categoryFirst": "Hand Bag",
       "categorySecond": "Shoulder Bag",
       "price": 35,
-      "discountPercent": 5,
+      "discountPercent": 0,
       "comment": [],
       "rating": 4,
       "description": "Stylish handbag for a touch of elegance in daily life.",
@@ -109,7 +109,7 @@
       "color": "Various",
       "sold": 0,
       "soldCount": 18,
-      "createDate": "2023-11-14"
+      "createDate": "2023-11-10 00:00:00"
     },
     {
       "id": 6,
@@ -126,7 +126,7 @@
       "color": "Various",
       "sold": 0,
       "soldCount": 14,
-      "createDate": "2023-11-15"
+      "createDate": "2023-11-10 19:00:00"
     }
   ]
 }

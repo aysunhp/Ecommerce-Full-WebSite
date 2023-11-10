@@ -104,6 +104,20 @@
           margin-left: 0px;
         }
       }
+      .featured-products {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        .card {
+          position: relative;
+          width: 360px;
+          height: 508px;
+          border: none;
+          border-radius: 8px;
+          background: #f9f9f9;
+        }
+      }
     }
   }
 

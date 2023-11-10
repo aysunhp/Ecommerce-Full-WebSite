@@ -2312,6 +2312,19 @@ section .cart-guarantee-section .containerr ul li a {
   padding: 13px 0 14px 0;
   margin-left: 0px;
 }
+.landing-page .swiper .containerr .featured-products {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.landing-page .swiper .containerr .featured-products .card {
+  position: relative;
+  width: 360px;
+  height: 508px;
+  border: none;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
 .landing-page .swiper {
   width: 100%;
   margin-bottom: 96px;
