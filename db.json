@@ -6,9 +6,9 @@
       "surname": "Khipiyeva",
       "email": "aysun@gmail.com",
       "password": "aysun123",
-      "orders": [],
-      "admin": false,
       "balance": 2500,
+      "admin": false,
+      "orders": [],
       "basket": [],
       "favourites": []
     },
@@ -18,11 +18,59 @@
       "surname": "Khipiyeva",
       "email": "aide@gmail.com",
       "password": "aide23",
-      "orders": [],
-      "admin": false,
       "balance": 2300,
+      "admin": false,
+      "orders": [],
       "basket": [],
       "favourites": []
+    },
+    {
+      "name": "Shannon",
+      "surname": "Kent",
+      "email": "winiki@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "balance": "73",
+      "admin": false,
+      "orders": [],
+      "basket": [],
+      "favourites": [],
+      "id": 3
+    },
+    {
+      "name": "Celeste Cotton",
+      "surname": "Garrison",
+      "email": "aysun1@gmail.com",
+      "password": "Pa$$w0rd!",
+      "balance": "4",
+      "admin": false,
+      "orders": [],
+      "basket": [],
+      "favourites": [],
+      "id": 4
+    },
+    {
+      "name": "Aileen Shaw",
+      "surname": "Mosley",
+      "email": "cilyfu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "balance": "45",
+      "admin": false,
+      "orders": [],
+      "basket": [],
+      "favourites": [],
+      "id": 5
+    },
+    {
+      "name": "Stacy Rush",
+      "surname": "Jennings",
+      "email": "gepur@mailinator.com",
+      "password": "stacy123",
+      "balance": "470",
+      "admin": false,
+      "orders": [],
+      "basket": [],
+      "favourites": [],
+      "id": 6
     }
   ],
   "products": [

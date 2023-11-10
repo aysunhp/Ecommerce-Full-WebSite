@@ -44,9 +44,15 @@
           Nor again is there anyone who to enjoy a pleasure that or pursues or
           desires to obtain
         </p>
-        <form action="">
+        <form action="" class="login-form" autocomplete="off">
           <label for="email"> Email </label>
-          <input type="email" id="email" class="form-control" />
+          <input
+            type="email"
+            id="email"
+            class="form-control email-inp"
+            autocomplete="off"
+            required
+          />
           <label for="code">
             <div class="code-forgot">
               <div class="code">Code</div>
@@ -55,7 +61,25 @@
               </div>
             </div>
           </label>
-          <input type="password" id="code" class="form-control" />
+          <input
+            type="password"
+            id="code"
+            class="form-control password-inp"
+            autocomplete="off"
+            required
+          />
+          <p class="text-danger d-none email-error">
+            invalid email or password!
+          </p>
+          <input
+            type="checkbox"
+            id="storage"
+            name="storage"
+            value="localStorage"
+          />
+          <label for="storage" class="storage-label"
+            >I have read and agree to the term of use.</label
+          ><br />
           <div class="login-btn">
             <button class="btn btn-danger">Login</button>
           </div>
@@ -69,7 +93,9 @@
 
     <!-- swiper script  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my script -->
-    <script src="./index.js"></script>
+    <script src="./assets/style/script/login.js"></script>
   </body>
 </html>

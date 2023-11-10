@@ -41,26 +41,44 @@
       <div class="containerr">
         <h1>Create Account</h1>
         <p>Excepteur sint occaecat cupidatat mollit</p>
-        <form action="">
+        <form class="register-form" action="">
           <label for="fname"> Name</label>
-          <input type="text" id="fname" class="form-control" />
-          <label for="lname"> Surname</label>
-          <input type="text" id="lname" class="form-control" />
-          <label for="email"> Email</label>
-          <input type="email" id="email" class="form-control" />
-          <label for="password"> Password</label>
-          <input type="password" id="password" class="form-control" />
-          <label for="balance"> Balance</label>
-          <input type="number" id="balance" class="form-control" min="0" />
           <input
-            type="checkbox"
-            id="storage"
-            name="storage"
-            value="localStorage"
+            type="text"
+            id="fname"
+            class="form-control fname-inp"
+            autocomplete="off"
           />
-          <label for="storage" class="storage-label"
-            >I have read and agree to the terms of use.</label
-          ><br />
+          <label for="lname"> Surname</label>
+          <input
+            type="text"
+            id="lname"
+            class="form-control lname-inp"
+            autocomplete="off"
+          />
+          <label for="email"> Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control email-inp"
+            autocomplete="off"
+          />
+          <p class="text-danger d-none email-error">Email already exists!</p>
+          <label for="password"> Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control password-inp"
+            autocomplete="off"
+          />
+          <label for="balance"> Balance</label>
+          <input
+            type="number"
+            id="balance"
+            class="form-control balance-inp"
+            min="0"
+            autocomplete="off"
+          />
           <div class="continue-btn">
             <button class="btn btn-danger">Continue</button>
           </div>
@@ -75,7 +93,9 @@
 
     <!-- swiper script  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my script -->
-    <script src="./index.js"></script>
+    <script src="./assets/style/script/register.js"></script>
   </body>
 </html>

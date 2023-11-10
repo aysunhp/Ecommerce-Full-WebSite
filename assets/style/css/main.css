@@ -2215,6 +2215,7 @@ section .cart-guarantee-section .containerr ul li a {
 
 .landing-page #hero-section {
   padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .landing-page #hero-section .hero-section {
   width: 100%;
