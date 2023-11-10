@@ -2,13 +2,27 @@
   "users": [
     {
       "id": 1,
+      "name": "Aysun",
+      "surname": "Khipiyeva",
       "email": "aysun@gmail.com",
-      "password": "aysun123"
+      "password": "aysun123",
+      "orders": [],
+      "admin": false,
+      "balance": 2500,
+      "basket": [],
+      "favourites": []
     },
     {
-        "id": 1,
-        "email": "aysun@gmail.com",
-        "password": "aysun123"
-      }
+      "id": 1,
+      "name": "Aide",
+      "surname": "Khipiyeva",
+      "email": "aide@gmail.com",
+      "password": "aide23",
+      "orders": [],
+      "admin": false,
+      "balance": 2300,
+      "basket": [],
+      "favourites": []
+    }
   ]
 }

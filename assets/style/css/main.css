@@ -2213,159 +2213,53 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 32px;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-body main {
-  width: 100%;
-}
-body main .containerr {
-  width: 552px;
-  height: 604px;
-  border-radius: 8px;
-  background: #fff;
-  padding: 0px 25px 25px 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-body main .containerr h1,
-body main .containerr p {
-  text-align: center;
-  margin-bottom: 25px;
-}
-body main .containerr p {
-  margin-bottom: 25px;
-}
-body main .containerr form {
-  width: 360px;
-}
-body main .containerr form label {
-  margin-bottom: 5px;
-}
-body main .containerr form input {
-  margin-bottom: 25px;
-}
-body main .containerr form .continue-btn {
-  width: 100%;
-  height: 52px;
-  padding: 0px;
-  margin-bottom: 10px;
-}
-body main .containerr form .continue-btn button {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-body main {
-  width: 100%;
-}
-body main .containerr {
-  width: 552px;
-  height: 604px;
-  border-radius: 8px;
-  background: #fff;
-  padding: 0px 25px 25px 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-body main .containerr h1,
-body main .containerr p {
-  text-align: center;
-  margin-bottom: 25px;
-}
-body main .containerr p {
-  margin-bottom: 25px;
-}
-body main .containerr form {
-  width: 360px;
-}
-body main .containerr form label {
-  margin-bottom: 5px;
-}
-body main .containerr form input {
-  margin-bottom: 25px;
-}
-body main .containerr form .login-btn {
-  width: 100%;
-  height: 52px;
-  padding: 0px;
-  margin-bottom: 10px;
-}
-body main .containerr form .login-btn button {
-  width: 100%;
-  height: 100%;
-}
-body main .containerr form .code-forgot {
-  display: flex;
-  align-items: center;
-  gap: 160px;
-  margin-bottom: 5px;
-}
-
-#hero-section {
+.landing-page #hero-section {
   padding-bottom: 0px;
 }
-#hero-section .hero-section {
+.landing-page #hero-section .hero-section {
   width: 100%;
   height: 584;
   background-color: #ffe2e0;
 }
-#hero-section .hero-section .containerr {
+.landing-page #hero-section .hero-section .containerr {
   width: 1128px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#hero-section .hero-section .containerr .hero-img {
+.landing-page #hero-section .hero-section .containerr .hero-img {
   width: 642px;
   height: 535px;
   margin-right: 8px;
 }
-
-.guarantee-section {
+.landing-page .guarantee-section {
   width: 100%;
   height: 144px;
   background: #f7f7f7;
   margin-bottom: 80px;
 }
-.guarantee-section .containerr {
+.landing-page .guarantee-section .containerr {
   width: 1128px;
 }
-.guarantee-section .containerr ul {
+.landing-page .guarantee-section .containerr ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 0;
   gap: 47px;
 }
-.guarantee-section .containerr ul li {
+.landing-page .guarantee-section .containerr ul li {
   margin: 48px 0px 0px 0px;
 }
-.guarantee-section .containerr ul li img {
+.landing-page .guarantee-section .containerr ul li img {
   width: 48px;
   height: 48px;
 }
-
-.bags {
+.landing-page .bags {
   width: 100%;
   margin-bottom: 96px;
 }
-.bags .containerr {
+.landing-page .bags .containerr {
   width: 1128px;
   display: flex;
   justify-content: center;
@@ -2373,24 +2267,24 @@ body main .containerr form .code-forgot {
   gap: 24px;
   position: relative;
 }
-.bags .containerr .box {
+.landing-page .bags .containerr .box {
   width: 264px;
   height: 162px;
   border-radius: 8px;
   background: #f5f5f5;
   position: relative;
 }
-.bags .containerr .box h1 {
+.landing-page .bags .containerr .box h1 {
   margin: 24px 0 0 24px;
 }
-.bags .containerr .box img {
+.landing-page .bags .containerr .box img {
   width: 180px;
   height: 114px;
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.bags .containerr .swipp-btn {
+.landing-page .bags .containerr .swipp-btn {
   background-color: white;
   width: 38px;
   height: 38px;
@@ -2400,14 +2294,13 @@ body main .containerr form .code-forgot {
   top: 45%;
   right: -1%;
 }
-
-.swiper {
+.landing-page .swiper {
   width: 100%;
 }
-.swiper .containerr {
+.landing-page .swiper .containerr {
   width: 1128px;
 }
-.swiper .containerr .featured-productions {
+.landing-page .swiper .containerr .featured-productions {
   width: 1128px;
   height: 54px;
   display: flex;
@@ -2415,19 +2308,18 @@ body main .containerr form .code-forgot {
   gap: 673px;
   margin-bottom: 32px;
 }
-.swiper .containerr .featured-productions h1 {
+.landing-page .swiper .containerr .featured-productions h1 {
   padding: 13px 0 14px 0;
   margin-left: 0px;
 }
-
-.swiper {
+.landing-page .swiper {
   width: 100%;
   margin-bottom: 96px;
 }
-.swiper .containerr {
+.landing-page .swiper .containerr {
   width: 1128px;
 }
-.swiper .containerr .bestsellers {
+.landing-page .swiper .containerr .bestsellers {
   width: 100%;
   height: 54px;
   display: flex;
@@ -2435,17 +2327,16 @@ body main .containerr form .code-forgot {
   gap: 650px;
   margin-bottom: 32px;
 }
-.swiper .containerr .bestsellers h1 {
+.landing-page .swiper .containerr .bestsellers h1 {
   margin: 5px 0px 0px 0px;
 }
-
-.swiper {
+.landing-page .swiper {
   width: 100%;
 }
-.swiper .containerr {
+.landing-page .swiper .containerr {
   width: 1128px;
 }
-.swiper .containerr .discount-productions {
+.landing-page .swiper .containerr .discount-productions {
   width: 100%;
   height: 54px;
   display: flex;
@@ -2453,6 +2344,153 @@ body main .containerr form .code-forgot {
   gap: 650px;
   margin-bottom: 32px;
 }
-.swiper .containerr .discount-productions h1 {
+.landing-page .swiper .containerr .discount-productions h1 {
   padding: 13px 0 14px 0;
+}
+
+body .register-page {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .register-page .containerr {
+  width: 552px;
+  height: 604px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .register-page .containerr h1,
+body .register-page .containerr p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+body .register-page .containerr p {
+  margin-bottom: 25px;
+}
+body .register-page .containerr form {
+  width: 360px;
+}
+body .register-page .containerr form label {
+  margin-bottom: 5px;
+}
+body .register-page .containerr form input {
+  margin-bottom: 25px;
+}
+body .register-page .containerr form .continue-btn {
+  width: 100%;
+  height: 52px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+body .register-page .containerr form .continue-btn button {
+  width: 100%;
+  height: 100%;
+}
+
+body .fogot-page {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .fogot-page .containerr {
+  width: 552px;
+  height: 604px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .fogot-page .containerr h1,
+body .fogot-page .containerr p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+body .fogot-page .containerr p {
+  margin-bottom: 25px;
+}
+body .fogot-page .containerr form {
+  width: 360px;
+}
+body .fogot-page .containerr form label {
+  margin-bottom: 5px;
+}
+body .fogot-page .containerr form input {
+  margin-bottom: 25px;
+}
+body .fogot-page .containerr form .continue-btn {
+  width: 100%;
+  height: 52px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+body .fogot-page .containerr form .continue-btn button {
+  width: 100%;
+  height: 100%;
+}
+
+body .login-page {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .login-page .containerr {
+  width: 552px;
+  height: 604px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .login-page .containerr h1,
+body .login-page .containerr p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+body .login-page .containerr p {
+  margin-bottom: 25px;
+}
+body .login-page .containerr form {
+  width: 360px;
+}
+body .login-page .containerr form label {
+  margin-bottom: 5px;
+}
+body .login-page .containerr form input {
+  margin-bottom: 25px;
+}
+body .login-page .containerr form .login-btn {
+  width: 100%;
+  height: 52px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+body .login-page .containerr form .login-btn button {
+  width: 100%;
+  height: 100%;
+}
+body .login-page .containerr form .code-forgot {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */

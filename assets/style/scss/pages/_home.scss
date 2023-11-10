@@ -1,145 +1,147 @@
-// hero section
-#hero-section {
-  padding-bottom: 0px;
-  .hero-section {
-    width: 100%;
-    height: 584;
-    background-color: #ffe2e0;
+.landing-page {
+  // hero section
+  #hero-section {
+    padding-bottom: 0px;
+    .hero-section {
+      width: 100%;
+      height: 584;
+      background-color: #ffe2e0;
 
-    .containerr {
-      width: 1128px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      .containerr {
+        width: 1128px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-      .hero-img {
-        width: 642px;
-        height: 535px;
-        margin-right: 8px;
-      }
-    }
-  }
-}
-// guarantee section
-.guarantee-section {
-  width: 100%;
-  height: 144px;
-  background: #f7f7f7;
-  margin-bottom: 80px;
-  // bags card section
-  .containerr {
-    width: 1128px;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 0;
-      gap: 47px;
-      li {
-        margin: 48px 0px 0px 0px;
-        img {
-          width: 48px;
-          height: 48px;
+        .hero-img {
+          width: 642px;
+          height: 535px;
+          margin-right: 8px;
         }
       }
     }
   }
-}
-//  bag card section
-.bags {
-  width: 100%;
-  margin-bottom: 96px;
-  .containerr {
-    width: 1128px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    position: relative;
-    .box {
-      width: 264px;
-      height: 162px;
-      border-radius: 8px;
-      background: #f5f5f5;
-      position: relative;
-      h1 {
-        margin: 24px 0 0 24px;
-      }
-      img {
-        width: 180px;
-        height: 114px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      }
-    }
-    .swipp-btn {
-      background-color: white;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: 2px solid #f5f5f5;
-      position: absolute;
-      top: 45%;
-      right: -1%;
-    }
-  }
-}
-// swipper section
-.swiper {
-  width: 100%;
-  .containerr {
-    width: 1128px;
-    .featured-productions {
+  // guarantee section
+  .guarantee-section {
+    width: 100%;
+    height: 144px;
+    background: #f7f7f7;
+    margin-bottom: 80px;
+    // bags card section
+    .containerr {
       width: 1128px;
-      height: 54px;
-      display: flex;
-      align-items: center;
-      gap: 673px;
-      margin-bottom: 32px;
-
-      h1 {
-        padding: 13px 0 14px 0;
-        margin-left: 0px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        gap: 47px;
+        li {
+          margin: 48px 0px 0px 0px;
+          img {
+            width: 48px;
+            height: 48px;
+          }
+        }
       }
     }
   }
-}
-
-.swiper {
-  width: 100%;
-  margin-bottom: 96px;
-  .containerr {
-    width: 1128px;
-    .bestsellers {
-      width: 100%;
-      height: 54px;
+  //  bag card section
+  .bags {
+    width: 100%;
+    margin-bottom: 96px;
+    .containerr {
+      width: 1128px;
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 650px;
-      margin-bottom: 32px;
-
-      h1 {
-        margin: 5px 0px 0px 0px;
+      gap: 24px;
+      position: relative;
+      .box {
+        width: 264px;
+        height: 162px;
+        border-radius: 8px;
+        background: #f5f5f5;
+        position: relative;
+        h1 {
+          margin: 24px 0 0 24px;
+        }
+        img {
+          width: 180px;
+          height: 114px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .swipp-btn {
+        background-color: white;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid #f5f5f5;
+        position: absolute;
+        top: 45%;
+        right: -1%;
       }
     }
   }
-}
+  // swipper section
+  .swiper {
+    width: 100%;
+    .containerr {
+      width: 1128px;
+      .featured-productions {
+        width: 1128px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        gap: 673px;
+        margin-bottom: 32px;
 
-.swiper {
-  width: 100%;
-  .containerr {
-    width: 1128px;
-    .discount-productions {
-      width: 100%;
-      height: 54px;
-      display: flex;
-      align-items: center;
-      gap: 650px;
-      margin-bottom: 32px;
+        h1 {
+          padding: 13px 0 14px 0;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
 
-      h1 {
-        padding: 13px 0 14px 0;
+  .swiper {
+    width: 100%;
+    margin-bottom: 96px;
+    .containerr {
+      width: 1128px;
+      .bestsellers {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        gap: 650px;
+        margin-bottom: 32px;
+
+        h1 {
+          margin: 5px 0px 0px 0px;
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    .containerr {
+      width: 1128px;
+      .discount-productions {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        gap: 650px;
+        margin-bottom: 32px;
+
+        h1 {
+          padding: 13px 0 14px 0;
+        }
       }
     }
   }
