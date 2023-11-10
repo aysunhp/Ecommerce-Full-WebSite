@@ -39,29 +39,35 @@
   <body>
     <main>
       <div class="containerr">
-        <h1>Login</h1>
-        <p>
-          Nor again is there anyone who to enjoy a pleasure that or pursues or
-          desires to obtain
-        </p>
+        <h1>Create Account</h1>
+        <p>Excepteur sint occaecat cupidatat mollit</p>
         <form action="">
-          <label for="email"> Email </label>
+          <label for="fname"> Name</label>
+          <input type="text" id="fname" class="form-control" />
+          <label for="lname"> Surname</label>
+          <input type="text" id="lname" class="form-control" />
+          <label for="email"> Email</label>
           <input type="email" id="email" class="form-control" />
-          <label for="code">
-            <div class="code-forgot">
-              <div class="code">Code</div>
-              <div class="forgot">
-                <a href="./fogot-pass.html">Forgot your password?</a>
-              </div>
-            </div>
-          </label>
-          <input type="password" id="code" class="form-control" />
-          <div class="login-btn">
-            <button class="btn btn-danger">Login</button>
+          <label for="password"> Password</label>
+          <input type="password" id="password" class="form-control" />
+          <label for="balance"> Balance</label>
+          <input type="number" id="balance" class="form-control" />
+          <input
+            type="checkbox"
+            id="storage"
+            name="storage"
+            value="localStorage"
+          />
+          <label for="storage" class="storage-label"
+            >I have read and agree to the terms of use.</label
+          ><br />
+          <div class="continue-btn">
+            <button class="btn btn-danger">Continue</button>
           </div>
           <p>
-            Don't have an account yet?
-            <a href="./register.html"><strong>Create now</strong></a>
+            Already have an account?<a href="./login.html"
+              ><strong> Sign in </strong></a
+            >
           </p>
         </form>
       </div>
