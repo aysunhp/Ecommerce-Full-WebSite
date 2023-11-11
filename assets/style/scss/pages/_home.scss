@@ -54,6 +54,7 @@
     .containerr {
       width: 1128px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 24px;
@@ -177,7 +178,7 @@
         gap: 24px;
         flex-wrap: wrap;
 
-        .swiper-wrapper .card {
+        .card {
           position: relative;
           width: 360px;
           height: 508px;

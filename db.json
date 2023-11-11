@@ -82,13 +82,31 @@
       "Material": "Exotic Leather",
       "price": 50,
       "discountPercent": 20,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 5,
       "description": "Versatile laptop bag for daily use or travel.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 8,
+      "sold": 8,
       "createDate": "2023-11-10 00:00:00"
     },
     {
@@ -99,14 +117,26 @@
       "Material": "Glitter",
       "price": 30,
       "discountPercent": 10,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4,
       "description": "Elegant evening bag for special occasions.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 15,
-      "createDate": "2023-11-10 00:00:00"
+      "sold": 4,
+      "createDate": "2023-11-11 22:10:00"
     },
     {
       "id": 3,
@@ -116,13 +146,25 @@
       "Material": "Exotic Leather",
       "price": 45,
       "discountPercent": 30,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4,
       "description": "Classic postman-style bag for everyday use.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 5,
+      "sold": 5,
       "createDate": "2023-11-10 00:00:00"
     },
     {
@@ -133,13 +175,19 @@
       "Material": "Denim",
       "price": 40,
       "discountPercent": 10,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 3,
       "description": "Casual and versatile shoulder bag for daily use.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 12,
+      "sold": 2,
       "createDate": "2023-11-10 00:00:00"
     },
     {
@@ -150,13 +198,25 @@
       "Material": "Denim",
       "price": 35,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4,
       "description": "Stylish handbag for a touch of elegance in daily life.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 18,
+      "sold": 3,
       "createDate": "2023-11-10 00:00:00"
     },
     {
@@ -167,13 +227,25 @@
       "Material": "Cotton",
       "price": 25,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4,
       "description": "Convenient belt bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 14,
+      "sold": 6,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -184,13 +256,25 @@
       "Material": " Faux Fur ",
       "price": 70,
       "discountPercent": 15,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.3,
       "description": "Modern Bag for night life",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 25,
+      "sold": 4,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -201,13 +285,31 @@
       "Material": "Faux Fur",
       "price": 200,
       "discountPercent": 40,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.5,
       "description": "suitable bag for daily use",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 30,
+      "sold": 3,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -218,13 +320,19 @@
       "Material": "Glitter",
       "price": 30,
       "discountPercent": 5,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 3.8,
       "description": "suitable bag for daily use",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 50,
+      "sold": 4,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -235,13 +343,31 @@
       "Material": "Denim",
       "price": 170,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 5,
       "description": "suitable bag for daily use",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 10,
+      "sold": 2,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -252,13 +378,25 @@
       "Material": "Cloth",
       "price": 60,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4,
       "description": "suitable bag for daily use",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 35,
+      "sold": 4,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -269,13 +407,25 @@
       "Material": "Cotton",
       "price": 45,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.2,
       "description": "Convenient bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 20,
+      "sold": 7,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -286,13 +436,25 @@
       "Material": "Faux Fur",
       "price": 54,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.8,
       "description": "Convenient bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 25,
+      "sold": 9,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -303,13 +465,31 @@
       "Material": "Glitter",
       "price": 50,
       "discountPercent": 8,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.1,
       "description": "Convenient bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 10,
+      "sold": 4,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -320,13 +500,25 @@
       "Material": "Cotton",
       "price": 38,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.6,
       "description": "Convenient bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 70,
+      "sold": 12,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -337,13 +529,31 @@
       "Material": "Cloth",
       "price": 120,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4.9,
       "description": "Convenient bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 12,
+      "sold": 6,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -354,13 +564,31 @@
       "Material": "Exotic Leather",
       "price": 1200,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 5,
       "description": "Convenient lt bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 8,
+      "sold": 2,
       "createDate": "2023-11-10 19:00:00"
     },
     {
@@ -371,13 +599,25 @@
       "Material": "Denim",
       "price": 32,
       "discountPercent": 0,
-      "comment": [],
+      "comments": [
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        },
+        {
+          "name": "Aysun",
+          "rate": 4,
+          "date": "2023-11-10 00:00:00",
+          "comments": "this is good for daily use"
+        }
+      ],
       "rating": 4,
       "description": "Convenient bag for hands-free carrying of essentials.",
       "sale": true,
       "color": "Various",
-      "sold": 0,
-      "soldCount": 32,
+      "sold": 4,
       "createDate": "2023-11-10 19:00:00"
     }
   ]

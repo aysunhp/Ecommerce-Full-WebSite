@@ -2287,6 +2287,7 @@ section .cart-guarantee-section .containerr ul li a {
 .landing-page .bags .containerr {
   width: 1128px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -2403,7 +2404,7 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 24px;
   flex-wrap: wrap;
 }
-.landing-page .swiper-discount .containerr .discount-products .swiper-wrapper .card {
+.landing-page .swiper-discount .containerr .discount-products .card {
   position: relative;
   width: 360px;
   height: 508px;
