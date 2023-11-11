@@ -98,27 +98,24 @@
             .rate {
               margin: 0px;
               margin-left: 32px;
+              display: flex;
+              gap: 10px;
             }
             .review {
               margin: 0px;
             }
           }
-          .piece-price {
-            // margin-left: 0px;
+          .price-box {
+            margin-left: 34px;
             margin-bottom: 32px;
             display: flex;
-            flex-wrap: wrap;
             gap: 16px;
-            .box {
-              width: 224px;
-              height: 60px;
-              border-radius: 8px;
-              border: 1px solid #e4e4e4;
-              padding: 15px 18px 14px 18px;
-              display: flex;
-              //   margin: 0px;
-              margin-right: 9px;
-            }
+            width: 250px;
+            height: 60px;
+            border-radius: 8px;
+            border: 1px solid #e4e4e4;
+            padding: 15px 18px 14px 0px;
+            // margin-right: 9px;
           }
           .size-color {
             display: flex;
