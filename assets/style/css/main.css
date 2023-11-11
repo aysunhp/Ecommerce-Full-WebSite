@@ -451,12 +451,11 @@ header nav ul li a {
 .myAccount .containerr .profile-section .product-page .product-info .containerr .row .right {
   margin-top: 4px;
 }
-.myAccount .containerr .profile-section .product-page .product-info .containerr .row .right h2 {
+.myAccount .containerr .profile-section .product-page .product-info .containerr .row .right #product-name {
   width: 300px;
   color: #212121;
   font-family: "Rubik";
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   margin-left: 32px;
   margin-bottom: 8px;
@@ -1070,24 +1069,22 @@ header nav .containerr ul li {
 .product-page .product-info .containerr .row .right .rate-reviews .rate {
   margin: 0px;
   margin-left: 32px;
+  display: flex;
+  gap: 10px;
 }
 .product-page .product-info .containerr .row .right .rate-reviews .review {
   margin: 0px;
 }
-.product-page .product-info .containerr .row .right .piece-price {
+.product-page .product-info .containerr .row .right .price-box {
+  margin-left: 34px;
   margin-bottom: 32px;
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
-}
-.product-page .product-info .containerr .row .right .piece-price .box {
-  width: 224px;
+  width: 250px;
   height: 60px;
   border-radius: 8px;
   border: 1px solid #e4e4e4;
-  padding: 15px 18px 14px 18px;
-  display: flex;
-  margin-right: 9px;
+  padding: 15px 18px 14px 0px;
 }
 .product-page .product-info .containerr .row .right .size-color {
   display: flex;
@@ -1668,12 +1665,11 @@ header nav ul li a {
 .myAccount .containerr .profile-section .product-page .product-info .containerr .row .right {
   margin-top: 4px;
 }
-.myAccount .containerr .profile-section .product-page .product-info .containerr .row .right h2 {
+.myAccount .containerr .profile-section .product-page .product-info .containerr .row .right #product-name {
   width: 300px;
   color: #212121;
   font-family: "Rubik";
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   margin-left: 32px;
   margin-bottom: 8px;
