@@ -2295,13 +2295,13 @@ section .cart-guarantee-section .containerr ul li a {
   top: 45%;
   right: -1%;
 }
-.landing-page .swiper {
+.landing-page .swiper-featured {
   width: 100%;
 }
-.landing-page .swiper .containerr {
+.landing-page .swiper-featured .containerr {
   width: 1128px;
 }
-.landing-page .swiper .containerr .featured-productions {
+.landing-page .swiper-featured .containerr .featured-productions {
   width: 1128px;
   height: 54px;
   display: flex;
@@ -2309,16 +2309,16 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 673px;
   margin-bottom: 32px;
 }
-.landing-page .swiper .containerr .featured-productions h1 {
+.landing-page .swiper-featured .containerr .featured-productions h1 {
   padding: 13px 0 14px 0;
   margin-left: 0px;
 }
-.landing-page .swiper .containerr .featured-products {
+.landing-page .swiper-featured .containerr .featured-products {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
 }
-.landing-page .swiper .containerr .featured-products .card {
+.landing-page .swiper-featured .containerr .featured-products .card {
   position: relative;
   width: 360px;
   height: 508px;
@@ -2326,14 +2326,14 @@ section .cart-guarantee-section .containerr ul li a {
   border-radius: 8px;
   background: #f9f9f9;
 }
-.landing-page .swiper {
+.landing-page .swiper-bestseller {
   width: 100%;
   margin-bottom: 96px;
 }
-.landing-page .swiper .containerr {
+.landing-page .swiper-bestseller .containerr {
   width: 1128px;
 }
-.landing-page .swiper .containerr .bestsellers {
+.landing-page .swiper-bestseller .containerr .bestsellers {
   width: 100%;
   height: 54px;
   display: flex;
@@ -2341,15 +2341,15 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 650px;
   margin-bottom: 32px;
 }
-.landing-page .swiper .containerr .bestsellers h1 {
+.landing-page .swiper-bestseller .containerr .bestsellers h1 {
   margin: 5px 0px 0px 0px;
 }
-.landing-page .swiper .containerr .bestsellers-products {
+.landing-page .swiper-bestseller .containerr .bestsellers-products {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
 }
-.landing-page .swiper .containerr .bestsellers-products .card {
+.landing-page .swiper-bestseller .containerr .bestsellers-products .card {
   position: relative;
   width: 360px;
   height: 508px;
@@ -2357,13 +2357,13 @@ section .cart-guarantee-section .containerr ul li a {
   border-radius: 8px;
   background: #f9f9f9;
 }
-.landing-page .swiper {
+.landing-page .swiper-discount {
   width: 100%;
 }
-.landing-page .swiper .containerr {
+.landing-page .swiper-discount .containerr {
   width: 1128px;
 }
-.landing-page .swiper .containerr .discount-productions {
+.landing-page .swiper-discount .containerr .discount-productions {
   width: 100%;
   height: 54px;
   display: flex;
@@ -2371,15 +2371,15 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 650px;
   margin-bottom: 32px;
 }
-.landing-page .swiper .containerr .discount-productions h1 {
+.landing-page .swiper-discount .containerr .discount-productions h1 {
   padding: 13px 0 14px 0;
 }
-.landing-page .swiper .containerr .discount-products {
+.landing-page .swiper-discount .containerr .discount-products {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
 }
-.landing-page .swiper .containerr .discount-products .card {
+.landing-page .swiper-discount .containerr .discount-products .card {
   position: relative;
   width: 360px;
   height: 508px;

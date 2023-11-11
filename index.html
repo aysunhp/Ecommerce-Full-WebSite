@@ -194,7 +194,7 @@
     </section>
 
     <!-- swiper section  -->
-    <section class="swiper" style="margin-top: 50px">
+    <section class="swiper-featured" style="margin-top: 50px">
       <div class="containerr">
         <div class="featured-productions">
           <h1>Featured Products</h1>
@@ -202,13 +202,17 @@
             View all products <i class="fa-solid fa-angle-right"></i>
           </a>
         </div>
-        <div class="featured-products"></div>
+        <div class="featured-products swiper">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
 
     <!-- Bestseller -->
     <section
-      class="swiper"
+      class="swiper-bestseller"
       style="padding-top: 50px; padding-bottom: 50px; background: #fff7f7"
     >
       <div class="containerr">
@@ -218,12 +222,19 @@
             View all products <i class="fa-solid fa-angle-right"></i>
           </a>
         </div>
-        <div class="bestsellers-products"></div>
+        <div class="bestsellers-products swiper">
+          <div class="swiper-wrapper best"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
 
     <!-- Discount Products -->
-    <section class="swiper" style="padding-top: 50px; padding-bottom: 50px">
+    <section
+      class="swiper-discount"
+      style="padding-top: 50px; padding-bottom: 50px"
+    >
       <div class="containerr">
         <div class="discount-productions">
           <h1>Discount Products</h1>
@@ -231,7 +242,11 @@
             View all products <i class="fa-solid fa-angle-right"></i>
           </a>
         </div>
-        <div class="discount-products"></div>
+        <div class="discount-products">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
     <!-- REGION END PRODUCT  -->
