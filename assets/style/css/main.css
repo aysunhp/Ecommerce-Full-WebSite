@@ -170,20 +170,28 @@ header nav ul li a {
   margin-top: 6px;
   margin-bottom: 48px;
 }
-.product-list-section .result-featured .result-featured-box .featured span {
+.product-list-section .result-featured .result-featured-box .featured select {
+  color: rgba(33, 33, 33, 0.9);
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
 }
-.product-list-section .result-featured .result-featured-box .featured i {
-  margin-top: 4px;
-  font-size: 20px;
-}
-.product-list-section .result-featured .result-featured-box .result {
+.product-list-section .result-featured .result-featured-box label {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
   margin-top: 7px;
+}
+.product-list-section .result-featured .result-featured-box label .result {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.product-list-section .product-list .categories .categories-content .price-range form {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .services .containerr .top-services h1 {
@@ -798,12 +806,20 @@ header nav .containerr ul li {
   top: 290px;
   right: 380px;
 }
+.product-list-section .result-featured .result-featured-box label {
+  margin-top: 6px;
+}
 .product-list-section .result-featured .result-featured-box .featured {
   width: 140px;
   height: 40px;
+}
+.product-list-section .result-featured .result-featured-box .featured select {
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   border: 1px solid #d0d0d0;
-  padding: 5px 13px 8px 19px;
+  padding: 5px 0px 8px 19px;
+  margin-right: 5px;
 }
 .product-list-section .product-list {
   padding: 0px;
@@ -844,11 +860,11 @@ header nav .containerr ul li {
   margin-bottom: 16px;
   margin-left: 40px;
 }
-.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range {
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form {
   display: flex;
   margin: 0 0 33px 40px;
 }
-.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range .less {
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form .less {
   border-radius: 8px;
   border: 1px solid #c8c8c8;
   width: 72px;
@@ -856,10 +872,10 @@ header nav .containerr ul li {
   padding: 7px 14px 7px 21px;
   margin: 0;
 }
-.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range .minus {
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form .minus {
   margin: 5px 6px 0px 6px;
 }
-.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range .more {
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form .more {
   border-radius: 8px;
   border: 1px solid #c8c8c8;
   width: 72px;
@@ -867,13 +883,13 @@ header nav .containerr ul li {
   margin: 0;
   padding: 7px 14px 7px 21px;
 }
-.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range .search-btn {
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form .search-btn {
   margin: 0 0 0 15px;
   padding: 10px 16px 10px 15px;
   width: 51px;
   height: 40px;
 }
-.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range .search-btn i {
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form .search-btn i {
   font-size: 20px;
 }
 .product-list-section .product-list .containerr .row .categories-section .categories .categories-content .size-range {
@@ -949,11 +965,11 @@ header nav .containerr ul li {
 .product-list-section .product-list .containerr .row .products-section {
   padding: 0px;
 }
-.product-list-section .product-list .containerr .row .products-section .featured-products {
+.product-list-section .product-list .containerr .row .products-section .featured-products-section {
   display: flex;
   flex-wrap: wrap;
 }
-.product-list-section .product-list .containerr .row .products-section .featured-products .card {
+.product-list-section .product-list .containerr .row .products-section .featured-products-section .card {
   margin: 0px 0px 48px 24px;
 }
 
@@ -1372,20 +1388,28 @@ header nav ul li a {
   margin-top: 6px;
   margin-bottom: 48px;
 }
-.product-list-section .result-featured .result-featured-box .featured span {
+.product-list-section .result-featured .result-featured-box .featured select {
+  color: rgba(33, 33, 33, 0.9);
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
 }
-.product-list-section .result-featured .result-featured-box .featured i {
-  margin-top: 4px;
-  font-size: 20px;
-}
-.product-list-section .result-featured .result-featured-box .result {
+.product-list-section .result-featured .result-featured-box label {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
   margin-top: 7px;
+}
+.product-list-section .result-featured .result-featured-box label .result {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.product-list-section .product-list .categories .categories-content .price-range form {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .services .containerr .top-services h1 {

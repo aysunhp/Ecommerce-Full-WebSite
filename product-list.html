@@ -92,12 +92,12 @@
       <nav>
         <div class="containerr">
           <ul>
-            <li><a href="">Evening bags</a></li>
-            <li><a href="">Shoulder bag</a></li>
-            <li><a href="">Backpag</a></li>
-            <li><a href="">Handbag</a></li>
-            <li><a href="">Postman bags</a></li>
-            <li><a href="">Belt bags</a></li>
+            <li class="evening-bag"><a href="">Evening bags</a></li>
+            <li class="shoulder-bag"><a href="">Shoulder bag</a></li>
+            <li class="backpack-bag"><a href="">Backpag</a></li>
+            <li class="handbag-bag"><a href="">Handbag</a></li>
+            <li class="postman-bag"><a href="">Postman bags</a></li>
+            <li class="belt-bag"><a href="">Belt bags</a></li>
           </ul>
         </div>
       </nav>
@@ -110,17 +110,20 @@
           <ul>
             <li>Home</li>
             <li><i class="fa-solid fa-chevron-right"></i></li>
-            <li>Shoulder Bags</li>
+            <li class="bag-category-name1">Shoulder Bags</li>
           </ul>
-          <h1>Shoulder bags</h1>
+          <h1 class="bag-category-name2">Shoulder bags</h1>
         </div>
       </div>
       <div class="result-featured">
         <div class="result-featured-box">
-          <div class="result"><span class="result-count">32</span> result</div>
+          <label for="result"><span class="result">32</span> result</label>
           <div class="featured">
-            <span>Featured</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <select name="result" id="result">
+              <option value="" checked hidden>Featured</option>
+              <option value="price">Pirce</option>
+              <option value="sold">Sale count</option>
+            </select>
           </div>
         </div>
       </div>
@@ -132,17 +135,17 @@
                 <div class="categories-title">
                   <div class="category-name">Categories</div>
                   <div class="category-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </div>
                 </div>
-                <div class="categories-content">
+                <div class="categories-content d-none">
                   <ul>
-                    <li><a href="">Backpacks</a></li>
-                    <li><a href=""></a>Belt Bags</li>
-                    <li><a href=""></a>Handbags</li>
-                    <li><a href=""></a>Shoulder bags</li>
-                    <li><a href="">Evening bags</a></li>
-                    <li><a href="">Postman bag</a></li>
+                    <li class="backpack">Backpacks</li>
+                    <li class="belt">Belt Bags</li>
+                    <li class="hand">Handbags</li>
+                    <li class="shoulder">Shoulder bags</li>
+                    <li class="evening">Evening bag</li>
+                    <li class="postman">Postman bag</li>
                   </ul>
                 </div>
               </div>
@@ -150,10 +153,10 @@
                 <div class="categories-title">
                   <div class="category-name">Material</div>
                   <div class="category-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </div>
                 </div>
-                <div class="categories-content">
+                <div class="categories-content d-none">
                   <input
                     type="checkbox"
                     id="cloth"
@@ -195,19 +198,21 @@
               </div>
               <div class="categories">
                 <div class="categories-title">
-                  <div class="category-name">Material</div>
+                  <div class="category-name">Price</div>
                   <div class="category-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </div>
                 </div>
-                <div class="categories-content">
+                <div class="categories-content d-none">
                   <div class="price-range">
-                    <div class="less">$ <span id="less-price">20</span></div>
-                    <span class="minus">-</span>
-                    <div class="more">$ <span id="more-price">50</span></div>
-                    <div class="search-btn btn btn-danger">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                    <form action="" class="price-range-form">
+                      <input type="number" class="less" placeholder="$" />
+                      <span class="minus">-</span>
+                      <input type="number" class="more" placeholder="$" />
+                      <div class="search-btn btn btn-danger">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -215,10 +220,10 @@
                 <div class="categories-title">
                   <div class="category-name">Size</div>
                   <div class="category-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </div>
                 </div>
-                <div class="categories-content">
+                <div class="categories-content d-none">
                   <div class="size-range">
                     <div class="xs size">XS</div>
                     <div class="s size">S</div>
@@ -230,10 +235,10 @@
                 <div class="categories-title">
                   <div class="category-name">Color</div>
                   <div class="category-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </div>
                 </div>
-                <div class="categories-content">
+                <div class="categories-content d-none">
                   <div class="colors">
                     <div class="color-wrapper border">
                       <div class="dark-green color-box"></div>
@@ -279,1032 +284,7 @@
               </div>
             </div>
             <div class="col-8 products-section">
-              <div class="featured-products">
-                <!-- card1  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card2  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card3 -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card4  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card5  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card6  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card7  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-                <!-- card8  -->
-                <div
-                  class="card"
-                  style="
-                    position: relative;
-                    width: 360px;
-                    height: 508px;
-                    border: none;
-                    border-radius: 8px;
-                    background: #f9f9f9;
-                  "
-                >
-                  <img
-                    src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 7.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="
-                      width: 218px;
-                      height: 243px;
-                      margin: 11px 71px 16px 71px;
-                    "
-                  />
-                  <div class="card-body">
-                    <div class="star-rating">
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                      <span class="star" style="color: #ffdd45">&#9733;</span>
-                    </div>
-                    <p
-                      class="card-text"
-                      style="
-                        color: #000;
-                        font-family: 'Poppins';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%;
-                      "
-                    >
-                      Shoulder Bag Leather Bag Leather undertakes laborious
-                      physical physical
-                    </p>
-                    <div class="product-price">
-                      <p
-                        class="text1"
-                        style="
-                          color: #f75145;
-                          font-family: 'Poppins';
-                          font-size: 20px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 170%;
-                        "
-                      >
-                        $130.00
-                        <span
-                          class="text2"
-                          style="
-                            color: rgba(54, 54, 54, 0.75);
-                            font-family: 'Poppins';
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 170%;
-                            margin-left: 18px;
-                          "
-                        >
-                          From $340.00
-                        </span>
-                      </p>
-                    </div>
-                    <button
-                      class="btn"
-                      style="
-                        width: 312px;
-                        height: 48px;
-                        border-radius: 8px;
-                        border: 1px solid #212121;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #212121;
-                          font-family: 'Poppins';
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%;
-                          margin-top: 4px;
-                        "
-                      >
-                        Add to cart
-                      </p>
-                    </button>
-                    <button
-                      style="
-                        background-color: #43d167;
-                        width: 79px;
-                        height: 32px;
-                        border-radius: 8px;
-                        border: none;
-                        position: absolute;
-                        top: 20px;
-                        left: 15px;
-                      "
-                    >
-                      <p
-                        style="
-                          color: #fff;
-                          font-family: Poppins;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 500;
-                          line-height: 170%; /* 27.2px */
-                        "
-                      >
-                        New
-                      </p>
-                    </button>
-                    <img
-                      src="./assets/images/logo/favourite.svg"
-                      alt=""
-                      style="position: absolute; top: 24px; right: 30px"
-                    />
-                  </div>
-                </div>
-              </div>
+              <div class="featured-products-section"></div>
             </div>
           </div>
         </div>
@@ -1401,8 +381,10 @@
     </footer>
     <!-- swiper script  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <!-- sweet alert -->
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my script -->
     <script src="./assets/style/script/product-list.js"></script>
   </body>
