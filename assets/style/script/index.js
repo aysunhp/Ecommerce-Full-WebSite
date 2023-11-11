@@ -46,44 +46,39 @@ fetch("http://localhost:3000/products")
       featuredSwiperWrapper.innerHTML += `
       <div class="swiper-slide">
        <div class="card">
-        <img
-          src="${element.image}"
-          class="card-img-top img-fluid"
-          alt="..."  
-          style="width: 218px; height: 243px; margin: 11px 71px 16px 71px"
-        />
+       <a href="product-page.html?id=${element.id}">  <img
+       src="${element.image}"
+       class="card-img-top img-fluid"
+       alt="..."  
+       style="width: 218px; height: 243px; margin: 11px 71px 16px 71px"
+     /></a>
         <div class="card-body">
           <div class="star-rating">
-            ${
-              element.rating >= 1
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 1
+          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+          : ""
+        }
             
-            ${
-              element.rating >= 2
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 2
+          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+          : ""
+        }
             
-            ${
-              element.rating >= 3
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 3
+          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+          : ""
+        }
 
-            ${
-              element.rating >= 4
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 4
+          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+          : ""
+        }
 
             
-            ${
-              element.rating == 5
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating == 5
+          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+          : ""
+        }
           </div>
           <p
             class="card-text"
@@ -110,14 +105,13 @@ fetch("http://localhost:3000/products")
                 line-height: 170%;
               "
             >
-                ${
-                  element.discountPercent !== 0
-                    ? `$${(
-                        element.price -
-                        element.price * (element.discountPercent / 100)
-                      ).toFixed(2)}`
-                    : `$${element.price.toFixed(2)}`
-                }
+                ${element.discountPercent !== 0
+          ? `$${(
+            element.price -
+            element.price * (element.discountPercent / 100)
+          ).toFixed(2)}`
+          : `$${element.price.toFixed(2)}`
+        }
               <span
                 class="text2"
                 style="
@@ -130,11 +124,10 @@ fetch("http://localhost:3000/products")
                   margin-left: 18px;
                 "
               >
-              ${
-                element.discountPercent !== 0
-                  ? `From $${element.price.toFixed(2)}`
-                  : ""
-              }
+              ${element.discountPercent !== 0
+          ? `From $${element.price.toFixed(2)}`
+          : ""
+        }
               </span>
             </p>
           </div>
@@ -163,11 +156,10 @@ fetch("http://localhost:3000/products")
           </button>
           <button
             style="
-              background-color: ${
-                currentDate.getTime() - productDate.getTime() <= 3600000
-                  ? "#43D167"
-                  : `${element.discountPercent ? "#DF4244" : "transparent"}`
-              };
+              background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
+          ? "#43D167"
+          : `${element.discountPercent ? "#DF4244" : "transparent"}`
+        };
               width: 79px;
               height: 32px;
               border-radius: 8px;
@@ -187,15 +179,13 @@ fetch("http://localhost:3000/products")
                 line-height: 170%; /* 27.2px */
               "
             >
-              ${
-                currentDate.getTime() - productDate.getTime() <= 3600000
-                  ? "New"
-                  : `${
-                      element.discountPercent
-                        ? `${element.discountPercent}%`
-                        : ""
-                    }`
-              }
+              ${currentDate.getTime() - productDate.getTime() <= 3600000
+          ? "New"
+          : `${element.discountPercent
+            ? `${element.discountPercent}%`
+            : ""
+          }`
+        }
             </p>
           </button>
           <img
@@ -222,36 +212,31 @@ fetch("http://localhost:3000/products")
         />
         <div class="card-body">
           <div class="star-rating">
-            ${
-              element.rating >= 1
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 1
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
             
-            ${
-              element.rating >= 2
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 2
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
             
-            ${
-              element.rating >= 3
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 3
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
 
-            ${
-              element.rating >= 4
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating >= 4
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
 
             
-            ${
-              element.rating == 5
-                ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                : ""
-            }
+            ${element.rating == 5
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
           </div>
           <p
             class="card-text"
@@ -278,14 +263,13 @@ fetch("http://localhost:3000/products")
                 line-height: 170%;
               "
             >
-                ${
-                  element.discountPercent !== 0
-                    ? `$${(
-                        element.price -
-                        element.price * (element.discountPercent / 100)
-                      ).toFixed(2)}`
-                    : `$${element.price.toFixed(2)}`
-                }
+                ${element.discountPercent !== 0
+            ? `$${(
+              element.price -
+              element.price * (element.discountPercent / 100)
+            ).toFixed(2)}`
+            : `$${element.price.toFixed(2)}`
+          }
               <span
                 class="text2"
                 style="
@@ -298,11 +282,10 @@ fetch("http://localhost:3000/products")
                   margin-left: 18px;
                 "
               >
-              ${
-                element.discountPercent !== 0
-                  ? `From $${element.price.toFixed(2)}`
-                  : ""
-              }
+              ${element.discountPercent !== 0
+            ? `From $${element.price.toFixed(2)}`
+            : ""
+          }
               </span>
             </p>
           </div>
@@ -331,11 +314,10 @@ fetch("http://localhost:3000/products")
           </button>
           <button
             style="
-              background-color: ${
-                currentDate.getTime() - productDate.getTime() <= 3600000
-                  ? "#43D167"
-                  : `${element.discountPercent ? "#DF4244" : "transparent"}`
-              };
+              background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
+            ? "#43D167"
+            : `${element.discountPercent ? "#DF4244" : "transparent"}`
+          };
               width: 79px;
               height: 32px;
               border-radius: 8px;
@@ -355,15 +337,13 @@ fetch("http://localhost:3000/products")
                 line-height: 170%; /* 27.2px */
               "
             >
-              ${
-                currentDate.getTime() - productDate.getTime() <= 3600000
-                  ? "New"
-                  : `${
-                      element.discountPercent
-                        ? `${element.discountPercent}%`
-                        : ""
-                    }`
-              }
+              ${currentDate.getTime() - productDate.getTime() <= 3600000
+            ? "New"
+            : `${element.discountPercent
+              ? `${element.discountPercent}%`
+              : ""
+            }`
+          }
             </p>
           </button>
           <img
@@ -391,36 +371,31 @@ fetch("http://localhost:3000/products")
          />
          <div class="card-body">
            <div class="star-rating">
-             ${
-               element.rating >= 1
-                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                 : ""
-             }
+             ${element.rating >= 1
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
              
-             ${
-               element.rating >= 2
-                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                 : ""
-             }
+             ${element.rating >= 2
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
              
-             ${
-               element.rating >= 3
-                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                 : ""
-             }
+             ${element.rating >= 3
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
  
-             ${
-               element.rating >= 4
-                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                 : ""
-             }
+             ${element.rating >= 4
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
  
              
-             ${
-               element.rating == 5
-                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-                 : ""
-             }
+             ${element.rating == 5
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
            </div>
            <p
              class="card-text"
@@ -447,14 +422,13 @@ fetch("http://localhost:3000/products")
                  line-height: 170%;
                "
              >
-                 ${
-                   element.discountPercent !== 0
-                     ? `$${(
-                         element.price -
-                         element.price * (element.discountPercent / 100)
-                       ).toFixed(2)}`
-                     : `$${element.price.toFixed(2)}`
-                 }
+                 ${element.discountPercent !== 0
+            ? `$${(
+              element.price -
+              element.price * (element.discountPercent / 100)
+            ).toFixed(2)}`
+            : `$${element.price.toFixed(2)}`
+          }
                <span
                  class="text2"
                  style="
@@ -467,11 +441,10 @@ fetch("http://localhost:3000/products")
                    margin-left: 18px;
                  "
                >
-               ${
-                 element.discountPercent !== 0
-                   ? `From $${element.price.toFixed(2)}`
-                   : ""
-               }
+               ${element.discountPercent !== 0
+            ? `From $${element.price.toFixed(2)}`
+            : ""
+          }
                </span>
              </p>
            </div>
@@ -500,11 +473,10 @@ fetch("http://localhost:3000/products")
            </button>
            <button
              style="
-               background-color: ${
-                 currentDate.getTime() - productDate.getTime() <= 3600000
-                   ? "#43D167"
-                   : `${element.discountPercent ? "#DF4244" : "transparent"}`
-               };
+               background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
+            ? "#43D167"
+            : `${element.discountPercent ? "#DF4244" : "transparent"}`
+          };
                width: 79px;
                height: 32px;
                border-radius: 8px;
@@ -524,15 +496,13 @@ fetch("http://localhost:3000/products")
                  line-height: 170%; /* 27.2px */
                "
              >
-               ${
-                 currentDate.getTime() - productDate.getTime() <= 3600000
-                   ? "New"
-                   : `${
-                       element.discountPercent
-                         ? `${element.discountPercent}%`
-                         : ""
-                     }`
-               }
+               ${currentDate.getTime() - productDate.getTime() <= 3600000
+            ? "New"
+            : `${element.discountPercent
+              ? `${element.discountPercent}%`
+              : ""
+            }`
+          }
              </p>
            </button>
            <img
