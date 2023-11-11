@@ -490,7 +490,7 @@ priceRangeForm.addEventListener("click", function (e) {
         result.addEventListener("click", function (e) {
             e.preventDefault();
             let resultValue = result.value;
-            if (resultValue == "price") {
+            if (resultValue == "price") {   
                 suitableProducts = suitableProducts.sort((a, b) => a.price - b.price);
                 featuredProductes.innerHTML = "";
                 count = 0;
