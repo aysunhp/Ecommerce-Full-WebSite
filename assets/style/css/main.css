@@ -2379,7 +2379,7 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 24px;
   flex-wrap: wrap;
 }
-.landing-page .swiper-discount .containerr .discount-products .card {
+.landing-page .swiper-discount .containerr .discount-products .swiper-wrapper .card {
   position: relative;
   width: 360px;
   height: 508px;
