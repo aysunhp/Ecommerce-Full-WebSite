@@ -124,24 +124,28 @@
                   </div>
                   <div class="product-img">
                     <img
+                      style="background-size: cover"
                       src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
                       alt=""
                     />
                   </div>
                   <div class="product-img">
                     <img
+                      style="background-size: cover"
                       src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
                       alt=""
                     />
                   </div>
                   <div class="product-img">
                     <img
+                      style="background-size: cover"
                       src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
                       alt=""
                     />
                   </div>
                   <div class="product-img last">
                     <img
+                      style="background-size: cover"
                       src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
                       alt=""
                     />
@@ -155,7 +159,7 @@
                     <span class="discount">30</span> %
                   </div>
                   <div class="heart-btn">
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart" style="color: red"></i>
                   </div>
                   <div class="product-image">
                     <img
@@ -167,36 +171,23 @@
               </div>
             </div>
             <div class="col-6 right">
-              <h2>Hotel Magique Love and Magique Tote Bag</h2>
+              <h2 id="product-name">Hotel Magique Love and Magique Tote Bag</h2>
               <div class="rate-reviews">
                 <div class="rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i> <span>5.0</span>
+                  <div class="rate-stars"></div>
+                  <span class="rate-count">5.0</span>
                 </div>
                 |
                 <div class="review">
                   <span class="review-count">2</span> reviews
                 </div>
               </div>
-              <div class="piece-price">
-                <div class="first box">
-                  <div class="piece-box">2-9 pieces</div>
-                  <div class="price-box">US $<span class="price">20</span></div>
+              <div class="price-box">
+                <div class="discounted-place d-none">
+                  <span>$ </span><span class="discounted-price"></span>
                 </div>
-                <div class="second box">
-                  <div class="piece-box">10-49 pieces</div>
-                  <div class="price-box">US $<span class="price">15</span></div>
-                </div>
-                <div class="third box">
-                  <div class="piece-box">50 pieces</div>
-                  <div class="price-box">US $<span class="price">12</span></div>
-                </div>
-                <div class="fourth box">
-                  <div class="piece-box">2-9 pieces</div>
-                  <div class="price-box">US $<span class="price">29</span></div>
+                <div class="price-place">
+                  <span class="price-span">$ </span><span class="price"> </span>
                 </div>
               </div>
               <div class="size-color">
@@ -832,9 +823,11 @@
     </footer>
     <!-- swiper script  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <!-- sweet alert -->
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my script -->
-    <script src="./product-page.html"></script>
+    <script src="./assets/style/script/product-page.js"></script>
   </body>
 </html>
