@@ -199,21 +199,37 @@ header {
   .result-featured {
     .result-featured-box {
       .featured {
-        span {
+        select {
+          color: rgba(33, 33, 33, 0.9);
           font-family: "Poppins";
           font-size: 16px;
           font-weight: 400;
         }
-        i {
-          margin-top: 4px;
-          font-size: 20px;
-        }
       }
-      .result {
+      label {
         font-family: "Poppins";
         font-size: 16px;
         font-weight: 400;
         margin-top: 7px;
+        .result {
+          font-family: "Poppins";
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+  .product-list {
+    .categories {
+      .categories-content {
+        .price-range {
+          form {
+            font-family: "Rubik";
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
       }
     }
   }
