@@ -1061,6 +1061,10 @@ header nav .containerr ul li {
   width: 340px;
   height: 379px;
 }
+.product-page .product-info .containerr .row .right #product-name,
+.product-page .product-info .containerr .row .right .whatsapp {
+  margin-left: 34px;
+}
 .product-page .product-info .containerr .row .right .rate-reviews {
   display: flex;
   margin-bottom: 24px;
@@ -1176,6 +1180,10 @@ header nav .containerr ul li {
 }
 .product-page .description-review .reviews-box {
   width: 100%;
+}
+.product-page .description-review .reviews-box .description-containerr {
+  width: 1128px;
+  padding-right: 80px;
 }
 .product-page .description-review .reviews-box .review-containerr {
   width: 1128px;
