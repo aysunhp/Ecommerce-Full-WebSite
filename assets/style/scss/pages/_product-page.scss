@@ -91,6 +91,11 @@
           }
         }
         .right {
+          #product-name,
+          .whatsapp {
+            margin-left: 34px;
+          }
+
           .rate-reviews {
             display: flex;
             margin-bottom: 24px;
@@ -221,6 +226,10 @@
     }
     .reviews-box {
       width: 100%;
+      .description-containerr {
+        width: 1128px;
+        padding-right: 80px;
+      }
       .review-containerr {
         width: 1128px;
         .review {
