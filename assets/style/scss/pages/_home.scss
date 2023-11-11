@@ -88,7 +88,7 @@
     }
   }
   // swipper section
-  .swiper {
+  .swiper-featured {
     width: 100%;
     .containerr {
       width: 1128px;
@@ -122,7 +122,7 @@
     }
   }
 
-  .swiper {
+  .swiper-bestseller {
     width: 100%;
     margin-bottom: 96px;
     .containerr {
@@ -139,10 +139,24 @@
           margin: 5px 0px 0px 0px;
         }
       }
+      .bestsellers-products {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        .card {
+          position: relative;
+          width: 360px;
+          height: 508px;
+          border: none;
+          border-radius: 8px;
+          background: #f9f9f9;
+        }
+      }
     }
   }
 
-  .swiper {
+  .swiper-discount {
     width: 100%;
     .containerr {
       width: 1128px;
@@ -156,6 +170,20 @@
 
         h1 {
           padding: 13px 0 14px 0;
+        }
+      }
+      .discount-products {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        .card {
+          position: relative;
+          width: 360px;
+          height: 508px;
+          border: none;
+          border-radius: 8px;
+          background: #f9f9f9;
         }
       }
     }
