@@ -224,7 +224,7 @@ let filtering = function () {
         if (resultValue == "price") {
             axios.get("http://localhost:3000/products").then((res) => {
                 let products = res.data;
-                let sortedProducts = products.sort((a, b) => a.price - b.price)
+                let sortedProducts = products.sort((a, b) => (a.price - a.price * a.discountPercent / 100) - (b.price - b.price * b.discountPercent / 100))
 
                 featuredProductes.innerHTML = "";
                 sortedProducts.forEach((bag) => {
@@ -247,13 +247,19 @@ let filtering = function () {
     })
 }
 filtering()
+
 let count = 0
 let result = document.querySelector(".result");
 let featuredProductes = document.querySelector(".featured-products-section");
 axios.get("http://localhost:3000/products").then((res) => {
     let products = res.data;
+
     products.forEach((bag) => {
         getBag(bag)
+        let bagCategoryName1 = document.querySelector(".bag-category-name1");
+        let bagCategoryName2 = document.querySelector(".bag-category-name2");
+        bagCategoryName1.innerHTML = ``;
+        bagCategoryName2.innerHTML = ``;
         count++;
     })
     result.innerHTML = `${count}`
@@ -374,7 +380,7 @@ categoryBtns.forEach(btn => {
             let shoulder = document.querySelector(".shoulder");
             let evening = document.querySelector(".evening");
             let postman = document.querySelector(".postman");
-            console.log(backpack);
+
             backpack.addEventListener("click", function (e) {
                 e.preventDefault();
                 axios.get("http://localhost:3000/products").then((res) => {
@@ -490,7 +496,7 @@ priceRangeForm.addEventListener("click", function (e) {
         result.addEventListener("click", function (e) {
             e.preventDefault();
             let resultValue = result.value;
-            if (resultValue == "price") {   
+            if (resultValue == "price") {
                 suitableProducts = suitableProducts.sort((a, b) => a.price - b.price);
                 featuredProductes.innerHTML = "";
                 count = 0;
@@ -514,3 +520,44 @@ priceRangeForm.addEventListener("click", function (e) {
     })
 })
 
+let materialForm = document.querySelector(".material-form");
+let materials = document.querySelectorAll(".material");
+let materialArr;
+materialForm.addEventListener("submit", function (e) {
+    e.preventDefault()
+    materialArr = [];
+    for (let material of materials) {
+        if (material.checked) {
+            materialArr.push(material.value)
+        }
+    }
+
+    axios.get("http://localhost:3000/products").then((res) => {
+        let products = res.data;
+        let bagArr = products.filter((elem) => {
+            if (materialArr.find(item => item == elem.Material)) {
+                return elem;
+            }
+        })
+        console.log(bagArr);
+        featuredProductes.innerHTML = "";
+        count = 0;
+        bagArr.forEach(bag => {
+            getBag(bag)
+            count++;
+        })
+        result.innerHTML = `${count}`
+    })
+})
+
+
+// console.log(materialArr)
+// let bagArr = materialArr.filter(item => {
+//     axios.get("http://localhost:3000/products").then((res) => {
+//         if (res.data.find((elem) => elem.Material === item)) {
+//             return elem;
+//         }
+
+//     })
+// })
+// console.log(bagArr)

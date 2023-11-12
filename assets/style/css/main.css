@@ -858,6 +858,9 @@ header nav .containerr ul li {
   margin-bottom: 16px;
   margin-left: 40px;
 }
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content button {
+  margin: 15px 0px 20px 34px;
+}
 .product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form {
   display: flex;
   margin: 0 0 33px 40px;
