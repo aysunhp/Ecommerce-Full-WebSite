@@ -8,41 +8,35 @@ if (localUser) {
   userArr = [...localUser];
 } else if (sessionUser) {
   userArr = [...sessionUser];
-}
-else {
+} else {
   userArr = [];
 }
 if (localUser || sessionUser) {
   account.classList.replace("d-none", "d-block");
   logOut.classList.replace("d-none", "d-block");
-  signUp.classList.add("d-none"); 
+  signUp.classList.add("d-none");
   logOut.addEventListener("click", function (e) {
     e.preventDefault();
     Swal.fire({
-      title: 'Are you sure?',
+      title: "Are you sure?",
       text: "You won't be able to revert this!",
-      icon: 'warning',
+      icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Log out!'
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Log out!",
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem("users");
         sessionStorage.removeItem("users");
-        Swal.fire(
-          'Logged out!',
-          'success'
-        )
-        document.location.href = "index.html"
+        Swal.fire("Logged out!", "success");
+        document.location.href = "index.html";
       }
-    })
-
-  })
+    });
+  });
 }
 
-
-// product page 
+// product page
 let id = new URLSearchParams(location.search).get("id");
 let productImgs = document.querySelectorAll(".product-img");
 let productImage = document.querySelector(".product-image");
@@ -55,10 +49,9 @@ let reviewCount = document.querySelector(".review-count");
 let priceBox = document.querySelector(".price");
 let discountPlace = document.querySelector(".discounted-place");
 let discountedPrice = document.querySelector(".discounted-price");
-let priceSpan = document.querySelector(".price-span")
+let priceSpan = document.querySelector(".price-span");
 let bagReviewCount = document.querySelector(".bag-review-count");
 let basketBtn = document.querySelector(".add-to-card-btn");
-
 
 axios.get("http://localhost:3000/products").then((res) => {
   let products = res.data;
@@ -67,65 +60,63 @@ axios.get("http://localhost:3000/products").then((res) => {
 
   productImgs.forEach((productImg) => {
     productImg.children[0].setAttribute("src", `${found.image}`);
-  })
+  });
   reviewCount.innerHTML = `${found.comments.length}`;
   bagReviewCount.innerHTML = `${found.comments.length}`;
-  let newPrice = found.price - (found.discountPercent * found.price / 100);
-  basketBtn.setAttribute("id", `${found.id}`)
+  let newPrice = found.price - (found.discountPercent * found.price) / 100;
+  basketBtn.setAttribute("id", `${found.id}`);
   if (found.discountPercent > 0) {
     discount.innerHTML = `${found.discountPercent}`;
     discountPlace.classList.remove("d-none");
-    discountPlace.style.color = "red"
+    discountPlace.style.color = "red";
     discountedPrice.innerHTML = `${newPrice}`;
-    discountedPrice.style.color = "red"
-    priceSpan.innerHTML = "FROM $"
-    priceBox.innerHTML = `${found.price}`
-
+    discountedPrice.style.color = "red";
+    priceSpan.innerHTML = "FROM $";
+    priceBox.innerHTML = `${found.price}`;
   } else {
     discountBox.classList.add("d-none");
-    priceBox.innerHTML = `${found.price}`
+    priceBox.innerHTML = `${found.price}`;
   }
 
   productImage.children[0].setAttribute("src", `${found.image}`);
   productName.innerHTML = `${found.name}`;
-  rateCount.innerHTML = `${found.rating}`
+  rateCount.innerHTML = `${found.rating}`;
   if (found.rating == "5") {
     rate.innerHTML = `
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px"></i>
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
-<i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>`
+<i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>`;
   } else if (found.rating == "4") {
     rate.innerHTML = `
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px"></i>
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
 <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
-`
+`;
   } else if (found.rating == "3") {
     rate.innerHTML = `
         <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px"></i>
         <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
         <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
-        `
+        `;
   } else if (found.rating == "2") {
     rate.innerHTML = `
         <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px"></i>
         <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px;"></i>
-        `
+        `;
   } else {
     rate.innerHTML = `
         <i class="fa-solid fa-star" style="color: #ffdd45;font-size:14px"></i>
-        `
+        `;
   }
-})
-
+});
 
 // review and description
 let description = document.querySelector(".descriptions");
 let descriptionContainerr = document.querySelector(".description-containerr");
-let reviewContainer = document.querySelector(".review-containerr")
+let reviewContainer = document.querySelector(".review-containerr");
 let review = document.querySelector(".review-container");
 let reviewBtn = document.querySelector(".review-btn");
 
@@ -139,7 +130,6 @@ reviewBtn.addEventListener("click", function (e) {
     descriptionContainerr.classList.add("d-none");
     let found = products.find((item) => item.id == id);
     let comments = found?.comments;
-
 
     comments.forEach((comment) => {
       reviewContainer.innerHTML += `
@@ -185,12 +175,10 @@ reviewBtn.addEventListener("click", function (e) {
                     <i style="color:#FFDD45" class="fa-solid fa-star"></i>
                     `;
         }
-      })
-
-    })
-
-  })
-})
+      });
+    });
+  });
+});
 
 description.addEventListener("click", function (e) {
   e.preventDefault();
@@ -198,20 +186,19 @@ description.addEventListener("click", function (e) {
   axios.get("http://localhost:3000/products").then((res) => {
     let products = res.data;
 
-
     let found = products.find((item) => item.id == id);
     // let descriptionContent = found.description;
     descriptionContainerr.classList.remove("d-none");
     reviewContainer.classList.add("d-none");
-    descriptionContainerr.children[0].innerHTML = `${found.description}`
-
-
-  })
-})
+    descriptionContainerr.children[0].innerHTML = `${found.description}`;
+  });
+});
 
 // you may also like section
 
-let container = document.querySelector(".you-may-also-like .also-liked-products .containerr");
+let container = document.querySelector(
+  ".you-may-also-like .also-liked-products .containerr"
+);
 
 axios.get("http://localhost:3000/products").then((res) => {
   let products = res.data;
@@ -237,31 +224,36 @@ axios.get("http://localhost:3000/products").then((res) => {
              
              <div class="card-body">
                <div class="star-rating">
-                 ${bag.rating >= 1
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+                 ${
+                   bag.rating >= 1
+                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                     : ""
+                 }
                  
-                 ${bag.rating >= 2
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+                 ${
+                   bag.rating >= 2
+                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                     : ""
+                 }
                  
-                 ${bag.rating >= 3
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+                 ${
+                   bag.rating >= 3
+                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                     : ""
+                 }
      
-                 ${bag.rating >= 4
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+                 ${
+                   bag.rating >= 4
+                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                     : ""
+                 }
      
                  
-                 ${bag.rating == 5
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+                 ${
+                   bag.rating == 5
+                     ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                     : ""
+                 }
                </div>
                <p
                  class="card-text"
@@ -288,13 +280,14 @@ axios.get("http://localhost:3000/products").then((res) => {
                      line-height: 170%;
                    "
                  >
-                     ${bag.discountPercent !== 0
-          ? `$${(
-            bag.price -
-            bag.price * (bag.discountPercent / 100)
-          ).toFixed(2)}`
-          : `$${bag.price.toFixed(2)}`
-        }
+                     ${
+                       bag.discountPercent !== 0
+                         ? `$${(
+                             bag.price -
+                             bag.price * (bag.discountPercent / 100)
+                           ).toFixed(2)}`
+                         : `$${bag.price.toFixed(2)}`
+                     }
                    <span
                      class="text2"
                      style="
@@ -307,16 +300,17 @@ axios.get("http://localhost:3000/products").then((res) => {
                        margin-left: 18px;
                      "
                    >
-                   ${bag.discountPercent !== 0
-          ? `From $${bag.price.toFixed(2)}`
-          : ""
-        }
+                   ${
+                     bag.discountPercent !== 0
+                       ? `From $${bag.price.toFixed(2)}`
+                       : ""
+                   }
                    </span>
                  </p>
                </div>
                <button
                  class="btn basket-btn"
-                 id=${bagid}
+                 id=${bag.id}
                  style="
                    width: 312px;
                    height: 48px;
@@ -340,10 +334,11 @@ axios.get("http://localhost:3000/products").then((res) => {
                </button>
                <button
                  style="
-                   background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
-          ? "#43D167"
-          : `${bag.discountPercent ? "#DF4244" : "transparent"}`
-        };
+                   background-color: ${
+                     currentDate.getTime() - productDate.getTime() <= 3600000
+                       ? "#43D167"
+                       : `${bag.discountPercent ? "#DF4244" : "transparent"}`
+                   };
                    width: 79px;
                    height: 32px;
                    border-radius: 8px;
@@ -363,13 +358,13 @@ axios.get("http://localhost:3000/products").then((res) => {
                      line-height: 170%; /* 27.2px */
                    "
                  >
-                   ${currentDate.getTime() - productDate.getTime() <= 3600000
-          ? "New"
-          : `${bag.discountPercent
-            ? `${bag.discountPercent}%`
-            : ""
-          }`
-        }
+                   ${
+                     currentDate.getTime() - productDate.getTime() <= 3600000
+                       ? "New"
+                       : `${
+                           bag.discountPercent ? `${bag.discountPercent}%` : ""
+                         }`
+                   }
                  </p>
                </button>
                <img
@@ -378,9 +373,9 @@ axios.get("http://localhost:3000/products").then((res) => {
                  style="position: absolute; top: 24px; right: 30px"
                />
              </div>
-           </div>`
+           </div>`;
     }
-  })
+  });
   // adding to basket
   let basketBtns = document.querySelectorAll(".basket-btn");
   let basketArr;
@@ -391,7 +386,7 @@ axios.get("http://localhost:3000/products").then((res) => {
     basketArr = [];
   }
 
-  basketBtns.forEach(basketBtn => {
+  basketBtns.forEach((basketBtn) => {
     basketBtn.addEventListener("click", function (e) {
       e.preventDefault();
 
@@ -426,12 +421,9 @@ axios.get("http://localhost:3000/products").then((res) => {
       } else {
         basketArr = [];
       }
-
-
-
-    })
-  })
-})
+    });
+  });
+});
 
 // adding to basket
 let addBasket = function () {
@@ -446,7 +438,7 @@ let addBasket = function () {
 
   basketBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(this.id)
+    console.log(this.id);
     bagId = this.id;
     let existingBag = basketArr.find((item) => item.id === bagId);
 
@@ -478,7 +470,7 @@ let addBasket = function () {
     } else {
       basketArr = [];
     }
-  })
-}
+  });
+};
 
-addBasket()
+addBasket();

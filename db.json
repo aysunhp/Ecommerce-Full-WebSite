@@ -6,33 +6,26 @@
       "surname": "Khipiyeva",
       "email": "aysun@gmail.com",
       "password": "aysun123",
-      "balance": 2106,
+      "balance": 1609,
       "admin": false,
       "orders": [
         {
+          "quantity": 2,
           "totalPrice": "36",
           "orderDate": "2023-11-12T12:25:32.459Z",
           "id": "826fd3f91984a"
         },
         {
+          "quantity": 3,
           "totalPrice": "36",
           "orderDate": "2023-11-12T12:26:17.214Z",
           "id": "e7bc3c91ac39e"
         },
         {
-          "totalPrice": "90",
-          "orderDate": "2023-11-12T12:28:05.932Z",
-          "id": "d4c4e570ad907"
-        },
-        {
-          "totalPrice": "165",
-          "orderDate": "2023-11-12T15:20:09.900Z",
-          "id": "7ca2da6006935"
-        },
-        {
+          "quantity": 2,
           "totalPrice": "67",
-          "orderDate": "2023-11-12T15:22:06.854Z",
-          "id": "b49f1f374dfe2"
+          "orderDate": "2023-11-12T18:08:20.633Z",
+          "id": "cb25ae69a0947"
         }
       ],
       "basket": [],

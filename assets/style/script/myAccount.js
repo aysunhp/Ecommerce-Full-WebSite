@@ -40,9 +40,12 @@ if (localUser || sessionUser) {
 
 let myAccountFavs = document.querySelector(".favorites");
 let faveTab = document.querySelector(".faveTab");
-let favouritesLocal = JSON.parse(localStorage.getItem("favouritesLocal"));
+let favouritesLocal = JSON.parse(localStorage.getItem("favouritesLocal")) || [];
 faveTab.addEventListener("click", function () {
+  addressBoxes.innerHTML = "";
   myAccountFavs.innerHTML = "";
+  tbody.classList.add("d-none");
+  thead.classList.add("d-none");
   favouritesLocal.forEach(function (element) {
     let productDate = new Date(element.createDate);
     let currentDate = new Date();
@@ -226,5 +229,71 @@ faveTab.addEventListener("click", function () {
         );
       });
     }
+  });
+});
+
+let addressTab = document.querySelector(".addressTab");
+let addressBoxes = document.querySelector(".address-boxes");
+
+addressTab.addEventListener("click", function () {
+  myAccountFavs.innerHTML = "";
+  thead.classList.add("d-none");
+  tbody.classList.add("d-none");
+  addressBoxes.innerHTML += `
+  <div class="adding-box">
+                <img src="./assets/images/logo/box-add.svg" alt="" />
+                <p>Create a new address</p>
+              </div>
+              <div class="added-box">
+                <div class="location">
+                  <p>Home</p>
+                  <img src="./assets/images/logo/confirmed.svg" alt="" />
+                </div>
+                <hr />
+                <div class="info">
+                  <h1>Jake L Stephenson</h1>
+                  <p>United Kingdom/Rugeley</p>
+                  <p>Biirches Valley Forest Centre, Lady Hill, WS15 2UQ</p>
+                  <p>847*****54</p>
+                </div>
+                <div class="buttons">
+                  <button class="edit btn btn-outline-dark">
+                    <img src="./assets/images/logo/edit.svg" alt="" />
+                    <p>Edit</p>
+                  </button>
+                  <button class="remove btn btn-outline-dark">
+                    <img src="./assets/images/logo/remove.svg" alt="" />
+                    <p>Remove</p>
+                  </button>
+                </div>
+              </div>
+  `;
+});
+
+let orderSection = document.querySelector(".order-section");
+let orderTab = document.querySelector(".orderTab");
+let thead = document.querySelector("thead");
+let tbody = document.querySelector("tbody");
+orderTab.addEventListener("click", function () {
+  myAccountFavs.innerHTML = "";
+  addressBoxes.innerHTML = "";
+  thead.classList.remove("d-none");
+  thead.innerHTML = "";
+  tbody.classList.remove("d-none");
+  tbody.innerHTML = "";
+  axios.get("http://localhost:3000/users/" + userArr[0].userId).then((res) => {
+    console.log(res.data.orders);
+    res.data.orders.forEach((element) => {
+      tbody.innerHTML += `
+      <tr>
+        <td>${element.id}</td>
+        <td>${element.quantity} products</td>
+        <td>US $${element.totalPrice}</td>
+        <td>${element.orderDate}</td>
+        <td>Delivered</td>
+        <td><img src="./assets/images/logo/menu.svg" alt="" /></td>
+      </tr>
+      `;
+    });
   });
 });

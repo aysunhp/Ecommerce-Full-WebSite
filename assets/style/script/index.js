@@ -204,8 +204,8 @@ fetch("http://localhost:3000/products")
             </p>
           </button>
           <i name="${element.id}" class="${
-        JSON.parse(localStorage.getItem("favSingers")) &&
-        JSON.parse(localStorage.getItem("favSingers")).find(
+        JSON.parse(localStorage.getItem("favouritesLocal")) &&
+        JSON.parse(localStorage.getItem("favouritesLocal")).find(
           (x) => x.id == element.id
         )
           ? "fa-solid"
@@ -232,7 +232,6 @@ fetch("http://localhost:3000/products")
         </a>
         <div class="card-body">
           <div class="star-rating">
-<<<<<<< HEAD
             ${
               element.rating >= 1
                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
@@ -263,33 +262,6 @@ fetch("http://localhost:3000/products")
                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                 : ""
             }
-=======
-            ${element.rating >= 1
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
-            
-            ${element.rating >= 2
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
-            
-            ${element.rating >= 3
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
-
-            ${element.rating >= 4
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
-
-            
-            ${element.rating == 5
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
->>>>>>> 6e5a96ff0660f2fe5ff9d2d1fed032bb9f38b3af
           </div>
           <p
             class="card-text"
@@ -316,7 +288,6 @@ fetch("http://localhost:3000/products")
                 line-height: 170%;
               "
             >
-<<<<<<< HEAD
                 ${
                   element.discountPercent !== 0
                     ? `$${(
@@ -325,15 +296,6 @@ fetch("http://localhost:3000/products")
                       ).toFixed(2)}`
                     : `$${element.price.toFixed(2)}`
                 }
-=======
-                ${element.discountPercent !== 0
-            ? `$${(
-              element.price -
-              element.price * (element.discountPercent / 100)
-            ).toFixed(2)}`
-            : `$${element.price.toFixed(2)}`
-          }
->>>>>>> 6e5a96ff0660f2fe5ff9d2d1fed032bb9f38b3af
               <span
                 class="text2"
                 style="
@@ -346,18 +308,11 @@ fetch("http://localhost:3000/products")
                   margin-left: 18px;
                 "
               >
-<<<<<<< HEAD
               ${
                 element.discountPercent !== 0
                   ? `From $${element.price.toFixed(2)}`
                   : ""
               }
-=======
-              ${element.discountPercent !== 0
-            ? `From $${element.price.toFixed(2)}`
-            : ""
-          }
->>>>>>> 6e5a96ff0660f2fe5ff9d2d1fed032bb9f38b3af
               </span>
             </p>
           </div>
@@ -387,18 +342,11 @@ fetch("http://localhost:3000/products")
           </button>
           <button
             style="
-<<<<<<< HEAD
               background-color: ${
                 currentDate.getTime() - productDate.getTime() <= 3600000
                   ? "#43D167"
                   : `${element.discountPercent ? "#DF4244" : "transparent"}`
               };
-=======
-              background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
-            ? "#43D167"
-            : `${element.discountPercent ? "#DF4244" : "transparent"}`
-          };
->>>>>>> 6e5a96ff0660f2fe5ff9d2d1fed032bb9f38b3af
               width: 79px;
               height: 32px;
               border-radius: 8px;
@@ -418,7 +366,6 @@ fetch("http://localhost:3000/products")
                 line-height: 170%; /* 27.2px */
               "
             >
-<<<<<<< HEAD
               ${
                 currentDate.getTime() - productDate.getTime() <= 3600000
                   ? "New"
@@ -428,15 +375,6 @@ fetch("http://localhost:3000/products")
                         : ""
                     }`
               }
-=======
-              ${currentDate.getTime() - productDate.getTime() <= 3600000
-            ? "New"
-            : `${element.discountPercent
-              ? `${element.discountPercent}%`
-              : ""
-            }`
-          }
->>>>>>> 6e5a96ff0660f2fe5ff9d2d1fed032bb9f38b3af
             </p>
           </button>
           <i name="${element.id}" class="${
@@ -692,7 +630,7 @@ fetch("http://localhost:3000/products")
       basketArr = [];
     }
 
-    basketBtns.forEach(basketBtn => {
+    basketBtns.forEach((basketBtn) => {
       basketBtn.addEventListener("click", function (e) {
         e.preventDefault();
 
@@ -727,13 +665,9 @@ fetch("http://localhost:3000/products")
         } else {
           basketArr = [];
         }
-
-
-
-      })
-    })
+      });
+    });
   });
-
 
 // sign up and account in header
 let signUp = document.querySelector(".sign-up");
@@ -776,20 +710,24 @@ if (localUser || sessionUser) {
   });
 }
 
-
 // search input
-let searchProduct = document.querySelector(".search-product")
-let inputSection = document.querySelector(".input-section .containerr")
+let searchProduct = document.querySelector(".search-product");
+let inputSection = document.querySelector(".input-section .containerr");
 searchProduct.addEventListener("keyup", function (e) {
   e.preventDefault();
   inputSection.innerHTML = "";
   axios.get("http://localhost:3000/products").then((res) => {
     let products = res.data;
     products.forEach((bag) => {
-      if (bag.name.toLowerCase().trim().includes(searchProduct.value.toLowerCase().trim())) {
+      if (
+        bag.name
+          .toLowerCase()
+          .trim()
+          .includes(searchProduct.value.toLowerCase().trim())
+      ) {
         let productDate = new Date(bag.createDate);
         let currentDate = new Date();
-        inputSection.parentElement.classList.remove("d-none")
+        inputSection.parentElement.classList.remove("d-none");
         inputSection.innerHTML += `
           <div class="card" style="width: 360px;
           height: 508px;margin-top:30px" >
@@ -804,31 +742,36 @@ searchProduct.addEventListener("keyup", function (e) {
 
           <div class="card-body">
             <div class="star-rating">
-              ${bag.rating >= 1
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
+              ${
+                bag.rating >= 1
+                  ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                  : ""
+              }
 
-              ${bag.rating >= 2
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
+              ${
+                bag.rating >= 2
+                  ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                  : ""
+              }
 
-              ${bag.rating >= 3
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
+              ${
+                bag.rating >= 3
+                  ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                  : ""
+              }
 
-              ${bag.rating >= 4
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
+              ${
+                bag.rating >= 4
+                  ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                  : ""
+              }
 
 
-              ${bag.rating == 5
-            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-            : ""
-          }
+              ${
+                bag.rating == 5
+                  ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+                  : ""
+              }
             </div>
             <p
               class="card-text"
@@ -855,13 +798,14 @@ searchProduct.addEventListener("keyup", function (e) {
                   line-height: 170%;
                 "
               >
-                  ${bag.discountPercent !== 0
-            ? `$${(
-              bag.price -
-              bag.price * (bag.discountPercent / 100)
-            ).toFixed(2)}`
-            : `$${bag.price.toFixed(2)}`
-          }
+                  ${
+                    bag.discountPercent !== 0
+                      ? `$${(
+                          bag.price -
+                          bag.price * (bag.discountPercent / 100)
+                        ).toFixed(2)}`
+                      : `$${bag.price.toFixed(2)}`
+                  }
                 <span
                   class="text2"
                   style="
@@ -874,10 +818,11 @@ searchProduct.addEventListener("keyup", function (e) {
                     margin-left: 18px;
                   "
                 >
-                ${bag.discountPercent !== 0
-            ? `From $${bag.price.toFixed(2)}`
-            : ""
-          }
+                ${
+                  bag.discountPercent !== 0
+                    ? `From $${bag.price.toFixed(2)}`
+                    : ""
+                }
                 </span>
               </p>
             </div>
@@ -907,10 +852,11 @@ searchProduct.addEventListener("keyup", function (e) {
             </button>
             <button
               style="
-                background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
-            ? "#43D167"
-            : `${bag.discountPercent ? "#DF4244" : "transparent"}`
-          };
+                background-color: ${
+                  currentDate.getTime() - productDate.getTime() <= 3600000
+                    ? "#43D167"
+                    : `${bag.discountPercent ? "#DF4244" : "transparent"}`
+                };
                 width: 79px;
                 height: 32px;
                 border-radius: 8px;
@@ -930,13 +876,11 @@ searchProduct.addEventListener("keyup", function (e) {
                   line-height: 170%; /* 27.2px */
                 "
               >
-                ${currentDate.getTime() - productDate.getTime() <= 3600000
-            ? "New"
-            : `${bag.discountPercent
-              ? `${bag.discountPercent}%`
-              : ""
-            }`
-          }
+                ${
+                  currentDate.getTime() - productDate.getTime() <= 3600000
+                    ? "New"
+                    : `${bag.discountPercent ? `${bag.discountPercent}%` : ""}`
+                }
               </p>
             </button>
             <img
@@ -946,11 +890,10 @@ searchProduct.addEventListener("keyup", function (e) {
             />
           </div>
         </div>
-          `
+          `;
       }
 
       //  adding to fav
-
     });
 
     // adding to basket
@@ -963,7 +906,7 @@ searchProduct.addEventListener("keyup", function (e) {
       basketArr = [];
     }
 
-    basketBtns.forEach(basketBtn => {
+    basketBtns.forEach((basketBtn) => {
       basketBtn.addEventListener("click", function (e) {
         e.preventDefault();
 
@@ -998,10 +941,7 @@ searchProduct.addEventListener("keyup", function (e) {
         } else {
           basketArr = [];
         }
-
-
-
-      })
-    })
+      });
+    });
   });
 });
