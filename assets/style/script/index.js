@@ -39,7 +39,7 @@ let dswiper = new Swiper(".swiper-discount .discount-products", {
 fetch("http://localhost:3000/products")
   .then((res) => res.json())
   .then((data) => {
-    data.forEach((element) => {
+    data.forEach((element, i) => {
       let productDate = new Date(element.createDate);
       let currentDate = new Date();
       // featured
@@ -179,6 +179,7 @@ fetch("http://localhost:3000/products")
               top: 20px;
               left: 15px;
             "
+            name="${element.id}"
           >
             <p
               style="
@@ -201,11 +202,14 @@ fetch("http://localhost:3000/products")
               }
             </p>
           </button>
-          <img
-            src="./assets/images/logo/favourite.svg"
-            alt=""
-            style="position: absolute; top: 24px; right: 30px"
-          />
+          <i name="${element.id}" class="${
+        JSON.parse(localStorage.getItem("favSingers")) &&
+        JSON.parse(localStorage.getItem("favSingers")).find(
+          (x) => x.id == element.id
+        )
+          ? "fa-solid"
+          : "fa-regular"
+      } fa-heart faveBtns" style="position: absolute; top: 24px; right: 30px ; width:22px;height:22px; color:#DF4244;"></i>
         </div>
       </div>
     </div>
@@ -371,11 +375,14 @@ fetch("http://localhost:3000/products")
               }
             </p>
           </button>
-          <img
-            src="./assets/images/logo/favourite.svg"
-            alt=""
-            style="position: absolute; top: 24px; right: 30px"
-          />
+          <i name="${element.id}" class="${
+          JSON.parse(localStorage.getItem("favouritesLocal")) &&
+          JSON.parse(localStorage.getItem("favouritesLocal")).find(
+            (x) => x.id == element.id
+          )
+            ? "fa-solid"
+            : "fa-regular"
+        } fa-heart faveBtns" style="position: absolute; top: 24px; right: 30px ; width:22px;height:22px; color:#DF4244;"></i>
         </div>
       </div>
     </div>
@@ -542,17 +549,81 @@ fetch("http://localhost:3000/products")
                }
              </p>
            </button>
+<<<<<<< HEAD
            <img
              src="./assets/images/logo/favourite.svg"
              alt=""
              style="position: absolute; top: 24px; right: 30px"
            />
+=======
+           <i name="${element.id}" class="${
+          JSON.parse(localStorage.getItem("favSingers")) &&
+          JSON.parse(localStorage.getItem("favSingers")).find(
+            (x) => x.id == element.id
+          )
+            ? "fa-solid"
+            : "fa-regular"
+        } fa-heart faveBtns" style="position: absolute; top: 24px; right: 30px ; width:22px;height:22px; color:#DF4244;"></i>
+>>>>>>> said
          </div>
        </div>
      </div>
       `;
       }
       dswiper.update();
+
+      // faves
+      let favourites = document.querySelectorAll(".faveBtns");
+      for (let favebtn of favourites) {
+        favebtn.addEventListener("click", function () {
+          let faveId = this.getAttribute("name");
+          if (this.classList.contains("fa-regular")) {
+            this.classList.replace("fa-regular", "fa-solid");
+            fetch("http://localhost:3000/products/" + faveId)
+              .then((res) => res.json())
+              .then((data) => {
+                let favouritesLocal = JSON.parse(
+                  localStorage.getItem("favouritesLocal")
+                );
+                if (!favouritesLocal) {
+                  favouritesLocal = [data];
+                } else {
+                  let existingItem = favouritesLocal.findIndex(
+                    (item) => item.id === data.id
+                  );
+                  if (existingItem !== -1) {
+                    console.log("Item already exists in the basket.");
+                  } else {
+                    favouritesLocal.push(data);
+                  }
+                }
+                localStorage.setItem(
+                  "favouritesLocal",
+                  JSON.stringify(favouritesLocal)
+                );
+              });
+          } else if (this.classList.contains("fa-solid")) {
+            this.classList.replace("fa-solid", "fa-regular");
+            let favouritesLocal = JSON.parse(
+              localStorage.getItem("favouritesLocal")
+            );
+            if (favouritesLocal) {
+              let id = this.getAttribute("name");
+              let existingItemIndex = favouritesLocal.findIndex(
+                (item) => item.id == id
+              );
+              console.log(existingItemIndex);
+              if (existingItemIndex !== -1) {
+                favouritesLocal.splice(existingItemIndex, 1);
+                localStorage.setItem(
+                  "favouritesLocal",
+                  JSON.stringify(favouritesLocal)
+                );
+              }
+            }
+          }
+        });
+      }
     });
   });
 
