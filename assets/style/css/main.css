@@ -1934,9 +1934,6 @@ main .containerr form p strong {
 }
 .shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode button {
   width: 102px;
-  padding-right: 10px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
   border: none;
 }
 .shoppingSection .containerr .shoppingList .checkout-section .buttons {
@@ -1945,6 +1942,7 @@ main .containerr form p strong {
   gap: 16px;
 }
 .shoppingSection .containerr .shoppingList .checkout-section .buttons button {
+  width: 360px;
   height: 52px;
 }
 

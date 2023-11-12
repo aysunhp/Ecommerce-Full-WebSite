@@ -135,7 +135,8 @@ fetch("http://localhost:3000/products")
             </p>
           </div>
           <button
-            class="btn"
+            class="btn basket-btn" 
+            id=${element.id}
             style="
               width: 312px;
               height: 48px;
@@ -218,30 +219,30 @@ fetch("http://localhost:3000/products")
         <div class="card-body">
           <div class="star-rating">
             ${element.rating >= 1
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
             
             ${element.rating >= 2
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
             
             ${element.rating >= 3
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
 
             ${element.rating >= 4
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
 
             
             ${element.rating == 5
-          ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
-          : ""
-        }
+            ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
+            : ""
+          }
           </div>
           <p
             class="card-text"
@@ -269,12 +270,12 @@ fetch("http://localhost:3000/products")
               "
             >
                 ${element.discountPercent !== 0
-          ? `$${(
-            element.price -
-            element.price * (element.discountPercent / 100)
-          ).toFixed(2)}`
-          : `$${element.price.toFixed(2)}`
-        }
+            ? `$${(
+              element.price -
+              element.price * (element.discountPercent / 100)
+            ).toFixed(2)}`
+            : `$${element.price.toFixed(2)}`
+          }
               <span
                 class="text2"
                 style="
@@ -288,14 +289,15 @@ fetch("http://localhost:3000/products")
                 "
               >
               ${element.discountPercent !== 0
-          ? `From $${element.price.toFixed(2)}`
-          : ""
-        }
+            ? `From $${element.price.toFixed(2)}`
+            : ""
+          }
               </span>
             </p>
           </div>
           <button
-            class="btn"
+            class="btn basket-btn"
+            id=${element.id}
             style="
               width: 312px;
               height: 48px;
@@ -320,9 +322,9 @@ fetch("http://localhost:3000/products")
           <button
             style="
               background-color: ${currentDate.getTime() - productDate.getTime() <= 3600000
-          ? "#43D167"
-          : `${element.discountPercent ? "#DF4244" : "transparent"}`
-        };
+            ? "#43D167"
+            : `${element.discountPercent ? "#DF4244" : "transparent"}`
+          };
               width: 79px;
               height: 32px;
               border-radius: 8px;
@@ -343,12 +345,12 @@ fetch("http://localhost:3000/products")
               "
             >
               ${currentDate.getTime() - productDate.getTime() <= 3600000
-          ? "New"
-          : `${element.discountPercent
-            ? `${element.discountPercent}%`
-            : ""
-          }`
-        }
+            ? "New"
+            : `${element.discountPercent
+              ? `${element.discountPercent}%`
+              : ""
+            }`
+          }
             </p>
           </button>
           <img
@@ -455,7 +457,8 @@ fetch("http://localhost:3000/products")
               </p>
             </div>
             <button
-              class="btn"
+              class="btn basket-btn"
+              id=${element.id}
               style="
                 width: 312px;
                 height: 48px;
@@ -522,8 +525,61 @@ fetch("http://localhost:3000/products")
       }
       dswiper.update();
     });
+
+    // adding to basket
+    let basketBtns = document.querySelectorAll(".basket-btn");
+    let basketArr;
+    let localBasket = JSON.parse(localStorage.getItem("basket"));
+    if (localBasket) {
+      basketArr = [...localBasket];
+    } else {
+      basketArr = [];
+    }
+
+    basketBtns.forEach(basketBtn => {
+      basketBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        bagId = this.id;
+        let existingBag = basketArr.find((item) => item.id === bagId);
+
+        if (basketArr) {
+          if (!existingBag) {
+            let obj = {};
+            obj.quantity = 1;
+            obj.id = bagId;
+            basketArr.push(obj);
+            localStorage.setItem("basket", JSON.stringify(basketArr));
+            Swal.fire({
+              position: "bottom-right",
+              icon: "success",
+              title: " Added to Basket",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          } else {
+            existingBag.quantity += 1;
+            localStorage.setItem("basket", JSON.stringify(basketArr));
+            Swal.fire({
+              position: "bottom-right",
+              icon: "success",
+              title: "One more added",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          }
+        } else {
+          basketArr = [];
+        }
+
+
+
+      })
+    })
   });
 
+
+// sign up and account in header
 let signUp = document.querySelector(".sign-up");
 let logOut = document.querySelector(".loging-out");
 let account = document.querySelector(".account");
@@ -563,3 +619,7 @@ if (localUser || sessionUser) {
     });
   });
 }
+
+
+
+let searchProduct.
