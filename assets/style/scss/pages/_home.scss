@@ -1,5 +1,18 @@
 .landing-page {
   // hero section
+
+  .input-section {
+    margin-bottom: 0px;
+    width: 100%;
+    min-height: 5px;
+    background-color: #ffe2e0;
+    .containerr {
+      width: 1128px;
+      display: flex;
+      flex-wrap: wrap;
+      // gap: 30px;
+    }
+  }
   #hero-section {
     padding-bottom: 0px;
     margin-bottom: 0px;

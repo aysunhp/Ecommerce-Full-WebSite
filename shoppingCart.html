@@ -128,7 +128,7 @@
         <h1>Shopping bag</h1>
         <div class="shoppingList">
           <div class="shoppingItems">
-            <div class="shoppingItem">
+            <!-- <div class="shoppingItem">
               <div class="image-wrapper">
                 <img
                   src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
@@ -165,83 +165,7 @@
                   </button>
                 </div>
               </div>
-            </div>
-            <div class="shoppingItem">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
-                  alt=""
-                />
-              </div>
-              <div class="info">
-                <h1>Hotel Magique Love and Magique Tote Bag</h1>
-                <p>
-                  Size: XS <span style="margin-left: 15px">Color: Grey</span>
-                </p>
-                <p>Delivery: 25-32 days</p>
-                <p>Quality</p>
-                <select name="value" id="" required>
-                  <option value="" selected disabled style="display: none">
-                    2-5
-                  </option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-              <div class="shoppingItem-right">
-                <div class="price">
-                  <p>US $20.00</p>
-                </div>
-                <div class="buttons">
-                  <button class="faveBtn">
-                    <i class="fa-regular fa-heart"></i> Favorite
-                  </button>
-                  <button class="faveBtn">
-                    <i class="fa-regular fa-trash-can"></i> Remove
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="shoppingItem">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/product/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 4.png"
-                  alt=""
-                />
-              </div>
-              <div class="info">
-                <h1>Hotel Magique Love and Magique Tote Bag</h1>
-                <p>
-                  Size: XS <span style="margin-left: 15px">Color: Grey</span>
-                </p>
-                <p>Delivery: 25-32 days</p>
-                <p>Quality</p>
-                <select name="value" id="" required>
-                  <option value="" selected disabled style="display: none">
-                    2-5
-                  </option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-              <div class="shoppingItem-right">
-                <div class="price">
-                  <p>US $20.00</p>
-                </div>
-                <div class="buttons">
-                  <button class="faveBtn">
-                    <i class="fa-regular fa-heart"></i> Favorite
-                  </button>
-                  <button class="faveBtn">
-                    <i class="fa-regular fa-trash-can"></i> Remove
-                  </button>
-                </div>
-              </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="checkout-section">
@@ -249,7 +173,13 @@
               <div class="info">
                 <div class="subtotal">
                   <p>Your subtotal</p>
-                  <p>US $20.00</p>
+                  <p>
+                    US $<span
+                      class="basket-total-price"
+                      style="font-size: 16px; color: black"
+                      >20.00</span
+                    >
+                  </p>
                 </div>
                 <div class="shippingChanges">
                   <p>Shipping changes</p>
@@ -257,18 +187,26 @@
                 </div>
                 <div class="totalprice">
                   <p>Total</p>
-                  <p>US $20.00</p>
+                  <p>
+                    US $<span
+                      class="basket-total-price"
+                      style="font-size: 16px; color: black"
+                      >20.00</span
+                    >
+                  </p>
                 </div>
               </div>
               <div class="promecode">
                 <input type="text" placeholder="Discount prome code" />
-                <button>Apply</button>
+                <button class="btn btn-danger">Apply</button>
               </div>
             </div>
 
             <div class="buttons">
-              <button class="confirmBtn">Confirm</button>
-              <button class="cashPaymentBtn">Cash Payment</button>
+              <button class="confirmBtn btn btn-danger">Confirm</button>
+              <button class="cashPaymentBtn btn btn-outline-dark">
+                Cash Payment
+              </button>
             </div>
           </div>
         </div>
@@ -410,6 +348,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my script -->
     <script src="./assets/style/script/shoppingCard.js"></script>
   </body>

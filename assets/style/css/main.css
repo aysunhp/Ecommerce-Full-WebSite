@@ -858,6 +858,9 @@ header nav .containerr ul li {
   margin-bottom: 16px;
   margin-left: 40px;
 }
+.product-list-section .product-list .containerr .row .categories-section .categories .categories-content button {
+  margin: 15px 0px 20px 34px;
+}
 .product-list-section .product-list .containerr .row .categories-section .categories .categories-content .price-range form {
   display: flex;
   margin: 0 0 33px 40px;
@@ -1931,9 +1934,6 @@ main .containerr form p strong {
 }
 .shoppingSection .containerr .shoppingList .checkout-section .info-section .promecode button {
   width: 102px;
-  padding-right: 10px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
   border: none;
 }
 .shoppingSection .containerr .shoppingList .checkout-section .buttons {
@@ -1942,6 +1942,7 @@ main .containerr form p strong {
   gap: 16px;
 }
 .shoppingSection .containerr .shoppingList .checkout-section .buttons button {
+  width: 360px;
   height: 52px;
 }
 
@@ -2239,6 +2240,17 @@ section .cart-guarantee-section .containerr ul li a {
   gap: 32px;
 }
 
+.landing-page .input-section {
+  margin-bottom: 0px;
+  width: 100%;
+  min-height: 5px;
+  background-color: #ffe2e0;
+}
+.landing-page .input-section .containerr {
+  width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .landing-page #hero-section {
   padding-bottom: 0px;
   margin-bottom: 0px;
