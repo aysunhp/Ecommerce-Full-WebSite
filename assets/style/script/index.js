@@ -620,6 +620,3 @@ if (localUser || sessionUser) {
   });
 }
 
-
-
-let searchProduct.
