@@ -197,7 +197,7 @@ confirmBtn.addEventListener("click", function (e) {
                     })
                     basketTotal.innerText = 0;
                     shoppingItems.innerHTML = "";
-                    shoppingItems.innerHTML = `<h2 class="text-danger m-3">No basket</h2>`;
+                    shoppingItems.innerHTML = `<h2 class="text-danger m-3">There is not any product</h2>`;
                     localStorage.removeItem("basket");
 
 
