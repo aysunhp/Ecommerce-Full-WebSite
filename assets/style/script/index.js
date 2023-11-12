@@ -262,10 +262,7 @@ fetch("http://localhost:3000/products")
                 ? `<span class="star" style="color: #ffdd45">&#9733;</span>`
                 : ""
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> said
           </div>
           <p
             class="card-text"
@@ -714,11 +711,6 @@ if (localUser || sessionUser) {
   });
 }
 
-<<<<<<< HEAD
-// let searchProduct
-=======
-// search input
->>>>>>> said
 let searchProduct = document.querySelector(".search-product");
 let inputSection = document.querySelector(".input-section .containerr");
 searchProduct.addEventListener("keyup", function (e) {
@@ -891,7 +883,6 @@ searchProduct.addEventListener("keyup", function (e) {
                 }
               </p>
             </button>
-<<<<<<< HEAD
             <i name="${bag.id}" class="${
           JSON.parse(localStorage.getItem("favouritesLocal")) &&
           JSON.parse(localStorage.getItem("favouritesLocal")).find(
@@ -900,20 +891,12 @@ searchProduct.addEventListener("keyup", function (e) {
             ? "fa-solid"
             : "fa-regular"
         } fa-heart faveBtns" style="position: absolute; top: 24px; right: 30px ; width:22px;height:22px; color:#DF4244;"></i>
-=======
-            <img
-              src="./assets/images/logo/favourite.svg"
-              alt=""
-              style="position: absolute; top: 24px; right: 30px"
-            />
->>>>>>> said
           </div>
         </div>
           `;
       }
 
       //  adding to fav
-<<<<<<< HEAD
       let favourites = document.querySelectorAll(".faveBtns");
       for (let favebtn of favourites) {
         favebtn.addEventListener("click", function () {
@@ -964,8 +947,6 @@ searchProduct.addEventListener("keyup", function (e) {
           }
         });
       }
-=======
->>>>>>> said
     });
 
     // adding to basket
